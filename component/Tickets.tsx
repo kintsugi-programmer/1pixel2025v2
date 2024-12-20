@@ -2,7 +2,9 @@ import React from 'react'
 
 const Tickets = () => {
   return (
-    <div>Tickets</div>
+    <section id="tickets">
+    <h2>Tickets</h2>
+  </section>
   )
 }
 

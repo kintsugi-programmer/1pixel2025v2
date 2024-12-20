@@ -2,6 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;
+  }
+  
+@font-face {
+    font-family: 'SFProDisplayBlackItalic';
+    src: url('/sf-pro-display-cufonfonts/SFPRODISPLAYBLACKITALIC.OTF') format('opentype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SFProDisplayBold';
+    src: url('/sf-pro-display-cufonfonts/SFPRODISPLAYBOLD.OTF') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SFProDisplayHeavyItalic';
+    src: url('/sf-pro-display-cufonfonts/SFPRODISPLAYHEAVYITALIC.OTF') format('opentype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SFProDisplayLightItalic';
+    src: url('/sf-pro-display-cufonfonts/SFPRODISPLAYLIGHTITALIC.OTF') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SFProDisplayMedium';
+    src: url('/sf-pro-display-cufonfonts/SFPRODISPLAYMEDIUM.OTF') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SFProDisplayRegular';
+    src: url('/sf-pro-display-cufonfonts/SFPRODISPLAYREGULAR.OTF') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SFProDisplaySemiBoldItalic';
+    src: url('/sf-pro-display-cufonfonts/SFPRODISPLAYSEMIBOLDITALIC.OTF') format('opentype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SFProDisplayThinItalic';
+    src: url('/sf-pro-display-cufonfonts/SFPRODISPLAYTHINITALIC.OTF') format('opentype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SFProDisplayUltraLightItalic';
+    src: url('/sf-pro-display-cufonfonts/SFPRODISPLAYULTRALIGHTITALIC.OTF') format('opentype');
+    font-weight: 200;
+    font-style: italic;
+}
 
 
 @font-face {
@@ -12,7 +78,7 @@
   }
   
 @font-face {
-    font-family: 'WeirdComic';
+    font-family: 'WeirdComicItalic';
     src: url('/weird_comic/WeirdComic-Italic.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
@@ -25,7 +91,7 @@
     font-style: normal;
 }
 body {
-    font-family: 'LongWeekend';
+    font-family: 'SFProDisplayRegular', sans-serif;
 }
 
 

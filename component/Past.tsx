@@ -2,7 +2,9 @@ import React from 'react'
 
 const Past = () => {
   return (
-    <div>Past</div>
+    <section id="past">
+    <h2>Past</h2>
+  </section>
   )
 }
 

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css"; // Ensure this imports your custom font styles
+// style={{ fontFamily: 'LongWeekend, sans-serif' }}
 
 
 export const metadata: Metadata = {
@@ -14,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased">
+      <body className="antialiased bg-[#131313] text-white">
         {/* Responsive Navbar */}
         {/* <div className="w-full px-5 py-3 md:px-10 md:py-5 flex justify-between items-center">
 

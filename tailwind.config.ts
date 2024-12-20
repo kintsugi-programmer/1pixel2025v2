@@ -9,6 +9,12 @@ export default {
   ],
   theme: {
   	extend: {
+		fontFamily: {
+			sf: ['SFProDisplayRegular', 'sans-serif'],
+			wc: ['WeirdComic', 'sans-serif'],
+			lw: ['LongWeekend', 'sans-serif'],
+			
+		  },
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',

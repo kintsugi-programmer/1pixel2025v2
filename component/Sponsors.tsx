@@ -2,7 +2,9 @@ import React from 'react'
 
 const Sponsors = () => {
   return (
-    <div>Sponsors</div>
+    <section id="sponsors">
+    <h2>Sponsors</h2>
+  </section>
   )
 }
 
