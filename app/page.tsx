@@ -10,24 +10,27 @@ import Tickets from "@/component/Tickets";
 import Sponsors from "@/component/Sponsors";
 export default function Home() {
   return (<div className="">
+
+
   <Nav />
-  <Hero />
-  <About />
-  <Past />
-  <Events />
-  <Sponsors />
-  <Tickets />
-  <Contact />
-  <Footer />
-  </div>
-   
-  );
-}
 
-
-const Hero = () => {
-  return (
-    <section id="hero">
+  <section id="hero">
+      <div className="flex flex-col">
+      <div className="hidden 2xl:block bg-blue-500 text-white p-4 text-center justify-center">
+      <div className="flex items-center pt-40 justify-center">
+        <Image
+          src="/Hero/Landing Element.svg"
+          alt="hcd logo"
+          width={1000}
+          height={100}
+          style={{ objectFit: 'contain' }}
+        />
+      </div>
+    </div>
+      {/* 1st div: Beyond laptop size */}
+      <div className="hidden xl:block 2xl:hidden bg-blue-500 text-white p-4 text-center">
+        Works only beyond laptop size (xl and above)
+        
       <div className='h-[820px] top-0 left-0 w-full  object-cover '>
           <div className="absolute top-[12rem] left-[40rem] right-2">  
               <Image
@@ -149,6 +152,42 @@ const Hero = () => {
         </div>
        
         </div>
+      </div>
+
+
+
+      {/* 3rd div: Below laptop size */}
+      <div className="block xl:hidden bg-yellow-500 text-black p-4 text-center">
+      <div className="flex items-center pt-40 justify-center">
+        <Image
+          src="/Hero/Landing Element.svg"
+          alt="hcd logo"
+          width={400}
+          height={100}
+          style={{ objectFit: 'contain' }}
+        />
+      </div>
+        
+      </div>
+
+    </div>
     </section>
+  <Hero />
+  <About />
+  <Past />
+  <Events />
+  <Sponsors />
+  <Tickets />
+  <Contact />
+  <Footer />
+  </div>
+   
+  );
+}
+
+
+const Hero = () => {
+  return (<></>
+   
   )
 }
