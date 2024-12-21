@@ -222,7 +222,7 @@ const Hero = () => {
   return (<>
     <section id="hero">
       <div className="flex flex-col">
-      <div className="hidden 2xl:block  text-white p-4 text-center justify-center">
+      {/* <div className="hidden 2xl:block  text-white p-4 text-center justify-center">
       <div className="flex items-center pt-40 justify-center">
         <Image
           src="/Hero/Landing Element.svg"
@@ -232,9 +232,9 @@ const Hero = () => {
           style={{ objectFit: 'contain' }}
         />
       </div>
-    </div>
+    </div> */}
       {/* 1st div: Beyond laptop size */}
-      <div className="hidden xl:block 2xl:hidden  text-white p-4 text-center">
+      <div className="hidden xl:block   text-white p-4 text-center">
         
       <div className='h-[820px] top-0 left-0 w-full  object-cover '>
           <div className="absolute top-[12rem] left-[40rem] right-2">  
