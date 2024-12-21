@@ -76,6 +76,33 @@ const Hero = () => {
                 style={{ objectFit: 'contain' }}
               />
           </div>
+          <div className="absolute top-[22rem] z-3 left-[26rem] right-2">  
+              <Image
+                src="/Hero/Pixie Face.svg"
+                alt="hcd logo"
+                width={200}
+                height={100}
+                style={{ objectFit: 'contain' }}
+              />
+          </div>
+          <div className="absolute top-[18rem] z-3 left-[19rem] right-2">  
+              <Image
+                src="/Hero/Vector.svg"
+                alt="hcd logo"
+                width={200}
+                height={100}
+                style={{ objectFit: 'contain' }}
+              />
+          </div>
+          <div className="absolute top-[18rem] z-3 left-[19rem] right-2">  
+              <Image
+                src="/Hero/Group 11523.svg"
+                alt="hcd logo"
+                width={100}
+                height={100}
+                style={{ objectFit: 'contain' }}
+              />
+          </div>
         <div className="mx-20 text-center">
         <div style={{ fontFamily: 'WeirdComicItalic, sans-serif' }}
  className="text-8xl absolute top-[16rem] left-[30rem] z-5 text-[#FAD85E]">
