@@ -1,7 +1,6 @@
 'use client'
-import About from "@/component/About";
-import Contact from "@/component/Contact";
-import Events from "@/component/Events";
+
+
 import Footer from "@/component/Footer";
 import { ParallaxScroll } from "@/components/ParallexScroll";
 import WordPullUp from "@/components/ui/word-pull-up";
@@ -10,9 +9,8 @@ import GradualSpacing from "@/components/ui/gradual-spacing";
 import { VelocityScroll } from "@/components/ui/scroll-based-velocity";
 import Image from "next/image";
 import Nav from "@/component/Nav";
-import Past from "@/component/Past";
-import Tickets from "@/component/Tickets";
-import Sponsors from "@/component/Sponsors";
+
+
 import { AboutButton,GetTicketsButton  } from "@/components/ui/Buttons";
 import Link from "next/link";
 import { Cursor } from 'react-creative-cursor';
@@ -25,15 +23,99 @@ import { motion } from "framer-motion";
 export default function Home() {
   return (<div className="" data-cursor-color="#FBD75E">
     <Cursor isGelly={true} />
-
-
   <Nav />
-
-
   <Hero />
-  <section id="about"
+  <About />
+  <Past />
+  <Events />
+  <Sponsors />
+  <Tickets />
+  <Contact />
+  <Memories/>
+  <Footer />
+  </div>
+   
+  );
+}
+const Tickets = () => {
+  return (
+    <section id="tickets">
+    <h2>Tickets</h2>
+  </section>
+  )
+}
+
+const Sponsors = () => {
+  return (
+    <section id="sponsors">
+    <h2>Sponsors</h2>
+  </section>
+  )
+}
+
+const Past = () => {
+  return (
+    <section id="past">
+    <div
+    className="w-full h-auto sm:pl-[10rem] flex flex-col items-center sm:items-start sm:flex-row"
+    ><div>
+          <div style={{ fontFamily: 'WeirdComicItalic, sans-serif' }} 
+         className="pt-20 sm:text-7xl flex justify-center text-center sm:text-left sm:justify-start text-4xl text-[#FFF6E1]">
+      Past <br />
+      Editions
+    </div>
+    <div className="flex flex-col items-center sm:items-start justify-between  pt-10 gap-y-5 ">
+  {/* Left-aligned paragraph */}
+  <div className=" w-2/2 text-justify">
+    <p>
+      1Pixel offers a unique opportunity to gain insights into the evolving world of design. With a focus on empowering attendees to stay at the forefront of innovation, the 1Pixel Design Conference is a pivotal event for those passionate about shaping the future of design.
+    </p>
+  </div>
+
+  {/* Right-aligned paragraph */}
+  <div className="w-2/2 text-justify">
+    <p>
+      This immersive experience brings together a wealth of knowledge from speakers with extensive and varied expertise, fostering an environment where future design leaders can learn, grow, and establish valuable connections.
+    </p>
+  </div>
+  
+</div>
+
+    </div>
+    <div>
+    <Image
+                src="/Past/Past.svg"
+                alt="hcd logo"
+                className="px-0"
+                width={5000}
+                height={100}
+                style={{ objectFit: 'contain' }}
+              />
+    </div>
+    </div>
+  </section>
+  )
+}
+const Events = () => {
+  return (
+    <section id="events">
+    <h2>Events</h2>
+  </section>
+  )
+}
+const Contact = () => {
+  return (
+    <section id="contact">
+    <h2>Contact Us</h2>
+  </section>
+  )
+}
+
+const About = () => {
+  return (<>
+    <section id="about"
  >
-  <div className='h-auto  w-full rounded-3xl flex bg-[#458F64] flex-col items-center justify-start pt-1 mx-auto h-auto w-full rounded-3xl flex bg-[#458F64] flex-col items-center justify-start pt-1 mx-auto'
+  <div className='h-auto  w-full rounded-3xl flex bg-[#458F64] flex-col items-center justify-start pt-1 mx-auto h-auto w-full rounded-3xl flex bg-[#458F64]  justify-start pt-1 mx-auto'
   style={{
     backgroundImage: "url('/FilterImages/Strokes texture 2.png')",
     backgroundSize: 'cover',
@@ -96,9 +178,10 @@ exploring the latest industry trends.
 </div>
 
   </div>
-</section>
-<br />
-<section id="memories">
+</section></>)};
+const Memories = () => {
+    return (<>
+    <section id="memories">
   <div className='h-auto  w-full rounded-3xl flex bg-[#EA8A5D] flex-col items-center justify-start pt-1 mx-auto'
   
   style={{
@@ -124,19 +207,7 @@ exploring the latest industry trends.
 
 <ParallaxScroll images={images}  />
   </div>
-</section>
-  <About />
-  <Past />
-  <Events />
-  <Sponsors />
-  <Tickets />
-  <Contact />
-  <Footer />
-  </div>
-   
-  );
-}
-
+</section></>)};
 
 const Hero = () => {
   return (<>
@@ -308,8 +379,8 @@ const Hero = () => {
         </div>
         
         <div className="absolute top-[34rem] right-40">
-          <div className="flex flex-row space-x-5">          <AboutButton/>
-          <GetTicketsButton /></div>
+          <div className="flex flex-row space-x-5">          <AboutButton/> <GetTicketsButton />
+         </div>
 
           
           
@@ -360,16 +431,7 @@ const images2 = [
   "/FilterImages/8.png",
   "/FilterImages/9.png",
   "/FilterImages/10.png",
-  "/FilterImages/11.png",
-  "/FilterImages/12.png",
-  "/FilterImages/13.png",  
-  "/FilterImages/14.png",
-  "/FilterImages/15.png",
-  "/FilterImages/16.png",
-  "/FilterImages/19.png",
-
 ]
-
 
 const images = [
   "/images/20.png",
