@@ -91,7 +91,7 @@ export function VelocityScroll({
 
     return (
       <div
-        className="w-full overflow-hidden whitespace-nowrap"
+        className="w-full overflow-hidden text-[#FFF6E1] whitespace-nowrap"
         style={{ fontFamily: 'WeirdComicItalic, sans-serif' }}
 
         ref={containerRef}

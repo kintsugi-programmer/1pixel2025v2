@@ -17,8 +17,8 @@ import { AboutButton,GetTicketsButton  } from "@/components/ui/Buttons";
 import Link from "next/link";
 import { Cursor } from 'react-creative-cursor';
 import 'react-creative-cursor/dist/styles.css';
-
-
+import WordRotate from "@/components/ui/word-rotate";
+import { motion } from "framer-motion";
 
 
 
@@ -31,8 +31,16 @@ export default function Home() {
 
 
   <Hero />
-  <section id="about">
-  <div className='h-auto  w-full rounded-3xl flex bg-[#458F64] flex-col items-center justify-start pt-1 mx-auto'>
+  <section id="about"
+ >
+  <div className='h-auto  w-full rounded-3xl flex bg-[#458F64] flex-col items-center justify-start pt-1 mx-auto h-auto w-full rounded-3xl flex bg-[#458F64] flex-col items-center justify-start pt-1 mx-auto'
+  style={{
+    backgroundImage: "url('/FilterImages/Strokes texture 2.png')",
+    backgroundSize: 'cover',
+    backgroundPosition: 'center center',
+    backgroundRepeat: 'no-repeat',
+    backgroundAttachment: 'fixed',
+  }}>
     <div style={{ fontFamily: 'WeirdComicItalic, sans-serif' }} 
          className="pt-40 sm:text-7xl text-4xl text-[#FAD85E]">
       About Us
@@ -41,9 +49,38 @@ export default function Home() {
 the 1pixel design Conference serves as the platform for showcasing and <br />
 exploring the latest industry trends.
     </div>
-    <div className="flex flex-row justify-between pt-10 pb-[10rem] px-[10rem] gap-x-[5rem]">
+    <div className="flex justify-center items-center">
+              {images2.map((image, idx) => (
+                <motion.div
+                  key={"images" + idx}
+                  style={{
+                    rotate: Math.random() * 20 - 10,
+                  }}
+                  whileHover={{
+                    scale: 1.1,
+                    rotate: 0,
+                    zIndex: 100,
+                  }}
+                  whileTap={{
+                    scale: 1.1,
+                    rotate: 0,
+                    zIndex: 100,
+                  }}
+                  className="rounded-xl -mr-4 mt-4 p-1 bg-[#FFF6E1] dark:bg-neutral-800 dark:border-neutral-700 border border-neutral-100 flex-shrink-0 overflow-hidden"
+                >
+                  <Image
+                    src={image}
+                    alt=" images"
+                    width="500"
+                    height="500"
+                    className="rounded-lg h-20 w-20 md:h-40 md:w-40 object-cover flex-shrink-0"
+                  />
+                </motion.div>
+              ))}
+            </div>
+    <div className="flex flex-col items-center sm:items-start sm:flex-row justify-between  pt-10 pb-[10rem] sm:px-[10rem] px-2 gap-y-5 sm:gap-x-[5rem]">
   {/* Left-aligned paragraph */}
-  <div className="w-1/2 text-justify">
+  <div className=" w-1/2 text-justify">
     <p>
       1Pixel offers a unique opportunity to gain insights into the evolving world of design. With a focus on empowering attendees to stay at the forefront of innovation, the 1Pixel Design Conference is a pivotal event for those passionate about shaping the future of design.
     </p>
@@ -62,11 +99,22 @@ exploring the latest industry trends.
 </section>
 <br />
 <section id="memories">
-  <div className='h-auto  w-full rounded-3xl flex bg-[#EA8A5D] flex-col items-center justify-start pt-1 mx-auto'>
-    <div style={{ fontFamily: 'WeirdComicItalic, sans-serif' }} 
-         className="pt-40 sm:text-7xl text-4xl text-black">
-      Memories
-    </div>
+  <div className='h-auto  w-full rounded-3xl flex bg-[#EA8A5D] flex-col items-center justify-start pt-1 mx-auto'
+  
+  style={{
+    backgroundImage: "url('/FilterImages/Strokes texture 2.png')",
+    backgroundSize: 'cover',
+    backgroundPosition: 'center center',
+    backgroundRepeat: 'no-repeat',
+    backgroundAttachment: 'fixed',
+  }}>
+
+
+    <WordRotate
+      className="pt-40 sm:text-7xl text-4xl text-[#FFF6E1] "
+      
+      words={["Legacy", "Memories" ,"Learnings"]}
+    />
     <div className="text-black sm:text-3xl text-xl pt-10 text-center" style={{ fontFamily: 'LongWeekend, sans-serif' }}>
 the 1pixel design Conference serves as the platform for showcasing and <br />
 exploring the latest industry trends.
@@ -300,6 +348,28 @@ const Hero = () => {
   )
 }
 
+const images2 = [
+
+  "/FilterImages/1.png",
+  "/FilterImages/2.png",
+  "/FilterImages/3.png",
+  "/FilterImages/4.png",
+  "/FilterImages/5.png",
+  "/FilterImages/6.png",
+  "/FilterImages/7.png",
+  "/FilterImages/8.png",
+  "/FilterImages/9.png",
+  "/FilterImages/10.png",
+  "/FilterImages/11.png",
+  "/FilterImages/12.png",
+  "/FilterImages/13.png",  
+  "/FilterImages/14.png",
+  "/FilterImages/15.png",
+  "/FilterImages/16.png",
+  "/FilterImages/19.png",
+
+]
+
 
 const images = [
   "/images/20.png",
@@ -315,6 +385,12 @@ const images = [
   "/images/5.png",
   "/images/6.png",
   "/images/7.png",
+  "/FilterImages/8.png",
+  "/FilterImages/9.png",
+  "/FilterImages/10.png",
+  "/FilterImages/11.png",
+  "/FilterImages/12.png",
+  "/FilterImages/13.png",  
   "/images/8.png",
   "/images/9.png",
   "/images/10.png",
@@ -325,5 +401,17 @@ const images = [
   "/images/15.png",
   "/images/16.png",
   "/images/19.png",
+  "/FilterImages/1.png",
+  "/FilterImages/2.png",
+  "/FilterImages/3.png",
+  "/FilterImages/4.png",
+  "/FilterImages/5.png",
+  "/FilterImages/6.png",
+
+
+  "/FilterImages/14.png",
+  "/FilterImages/15.png",
+  "/FilterImages/16.png",
+  "/FilterImages/19.png",
 
 ]
