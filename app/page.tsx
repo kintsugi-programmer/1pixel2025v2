@@ -4,7 +4,8 @@ import Contact from "@/component/Contact";
 import Events from "@/component/Events";
 import Footer from "@/component/Footer";
 import { ParallaxScroll } from "@/components/ParallexScroll";
-
+import WordPullUp from "@/components/ui/word-pull-up";
+import GradualSpacing from "@/components/ui/gradual-spacing";
 // import Hero from "@/component/Hero";
 import { VelocityScroll } from "@/components/ui/scroll-based-velocity";
 import Image from "next/image";
@@ -12,147 +13,18 @@ import Nav from "@/component/Nav";
 import Past from "@/component/Past";
 import Tickets from "@/component/Tickets";
 import Sponsors from "@/component/Sponsors";
-import styled from 'styled-components';
-const GT2Button = () => {
-  return (
-    <StyledWrapper2>
-      <button className="learn-more"> Learn More
-      </button>
-    </StyledWrapper2>
-  );
-}
-
-const StyledWrapper2 = styled.div`
-  button {
-   position: relative;
-   display: inline-block;
-   cursor: pointer;
-   outline: none;
-   border: 0;
-   vertical-align: middle;
-   text-decoration: none;
-   font-family: inherit;
-   font-size: 15px;
-  }
-
-  button.learn-more {
-   font-weight: 600;
-   color: #382b22;
-   text-transform: uppercase;
-   padding: 1.25em 2em;
-   background: #fff0f0;
-   border: 2px solid #b18597;
-   border-radius: 0.75em;
-   -webkit-transform-style: preserve-3d;
-   transform-style: preserve-3d;
-   -webkit-transition: background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
-   transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
-  }
-
-  button.learn-more::before {
-   position: absolute;
-   content: '';
-   width: 100%;
-   height: 100%;
-   top: 0;
-   left: 0;
-   right: 0;
-   bottom: 0;
-   background: #f9c4d2;
-   border-radius: inherit;
-   -webkit-box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #ffe3e2;
-   box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #ffe3e2;
-   -webkit-transform: translate3d(0, 0.75em, -1em);
-   transform: translate3d(0, 0.75em, -1em);
-   transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
-  }
-
-  button.learn-more:hover {
-   background: #ffe9e9;
-   -webkit-transform: translate(0, 0.25em);
-   transform: translate(0, 0.25em);
-  }
-
-  button.learn-more:hover::before {
-   -webkit-box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
-   box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
-   -webkit-transform: translate3d(0, 0.5em, -1em);
-   transform: translate3d(0, 0.5em, -1em);
-  }
-
-  button.learn-more:active {
-   background: #ffe9e9;
-   -webkit-transform: translate(0em, 0.75em);
-   transform: translate(0em, 0.75em);
-  }
-
-  button.learn-more:active::before {
-   -webkit-box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
-   box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
-   -webkit-transform: translate3d(0, 0, -1em);
-   transform: translate3d(0, 0, -1em);
-  }`;
+import { AboutButton,GetTicketsButton  } from "@/components/ui/Buttons";
+import Link from "next/link";
+import { Cursor } from 'react-creative-cursor';
+import 'react-creative-cursor/dist/styles.css';
 
 
-const GTButton = () => {
-  return (
-    <StyledWrapper>
-      <button className="btn">
-        <svg height={24} width={24} fill="#131313" viewBox="0 0 24 24" data-name="Layer 1" id="Layer_1" className="sparkle">
-          <path d="M10,21.236,6.755,14.745.264,11.5,6.755,8.255,10,1.764l3.245,6.491L19.736,11.5l-6.491,3.245ZM18,21l1.5,3L21,21l3-1.5L21,18l-1.5-3L18,18l-3,1.5ZM19.333,4.667,20.5,7l1.167-2.333L24,3.5,21.667,2.333,20.5,0,19.333,2.333,17,3.5Z" />
-        </svg>
-        <span className="text">Generate</span>
-      </button>
-    </StyledWrapper>
-  );
-}
 
-const StyledWrapper = styled.div`
-  .btn {
-    border: none;
-    width: 15em;
-    height: 5em;
-    border-radius: 3em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-    background: #1C1A1C;
-    cursor: pointer;
-    transition: all 450ms ease-in-out;
-  }
 
-  .sparkle {
-    fill: #AAAAAA;
-    transition: all 800ms ease;
-  }
-
-  .text {
-    font-weight: 600;
-    color: #AAAAAA;
-    font-size: medium;
-  }
-
-  .btn:hover {
-    background: linear-gradient(0deg,#A47CF3,#683FEA);
-    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
-    inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
-    0px 0px 0px 4px rgba(255, 255, 255, 0.2),
-    0px 0px 180px 0px #9917FF;
-    transform: translateY(-2px);
-  }
-
-  .btn:hover .text {
-    color: white;
-  }
-
-  .btn:hover .sparkle {
-    fill: white;
-    transform: scale(1.2);
-  }`;
 
 export default function Home() {
-  return (<div className="">
+  return (<div className="" data-cursor-color="#FBD75E">
+    <Cursor isGelly={true} />
 
 
   <Nav />
@@ -242,7 +114,7 @@ const Hero = () => {
                 src="/Hero/Chessboard.svg"
                 alt="hcd logo"
                 width={300}
-                className="animate-rspin-slow"
+                className="animate-rspin-slow "
                 height={100}
                 style={{ objectFit: 'contain' }}
               />
@@ -349,12 +221,26 @@ const Hero = () => {
 
         <div className="mx-20 text-center">
         <div style={{ fontFamily: 'WeirdComicItalic, sans-serif' }}
- className="text-8xl absolute top-[16rem] left-[30rem] z-5 text-[#FAD85E]">
-        1PIXEL
+ className="absolute top-[16rem] left-[30rem] z-5 text-[#FAD85E]">
+  <WordPullUp
+      className="text-4xl   md:text-8xl "
+      words="1Pixel"
+    />
+         {/* <GradualSpacing
+      className="font-display text-center text-4xl  md:text-8xl "
+      text="1pixel"
+    /> */}
         </div>
         <div style={{ fontFamily: 'WeirdComicItalic, sans-serif' }}
- className="text-8xl absolute top-[20rem] left-[40rem] z-5 text-[#EEEBE4]">
-        DESCON
+ className="absolute top-[20rem] left-[40rem] z-5 text-[#EEEBE4]">
+          <WordPullUp
+      className="text-4xl   md:text-8xl "
+      words="descon"
+    />
+     {/* <GradualSpacing
+      className="font-display text-center text-4xl  md:text-8xl "
+      text="DESCON"
+    /> */}
         </div>
         <div style={{ fontFamily: 'WeirdComicItalic, sans-serif' }}
  className="absolute text-8xl top-[18.5rem] left-[64.5rem] z-5 text-[#131313]">
@@ -362,16 +248,25 @@ const Hero = () => {
         </div>
         
         </div>
-        <div className="absolute top-[37rem] px-40">
+        <div className="absolute top-[34rem] px-40">
           <div className="text-left text-3xl " style={{ fontFamily: 'LongWeekend, sans-serif' }} >Welcome to the 3rd Edition of 1Pixel Design Conference 2025.
-          <br />North India's Largest Student-Led Design Event at IIIT-Delhi.</div>
+          <br />North India's Largest Student-Led Design Event at IIIT-Delhi.
+          
+          <div className="text-justify text-[#FBD75E] ">9:30am-5pm <span className="text-justify text-[#458F64] font-bold ">|</span> 4th - 5th January 2025  
+           <span className="text-justify text-[#458F64] font-bold "> |</span> R&D, IIIT-Delhi</div>
+
+          </div>
+
         </div>
-        <div className="absolute top-[37rem] right-40">
-          <GTButton/>
-          <GT2Button/>
+        
+        <div className="absolute top-[34rem] right-40">
+          <div className="flex flex-row space-x-5">          <AboutButton/>
+          <GetTicketsButton /></div>
+
           
           
         </div>
+        
        
         </div>
       </div>

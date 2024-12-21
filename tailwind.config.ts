@@ -10,7 +10,7 @@ export default {
   theme: {
   	extend: {
 		animation: {
-			'spin-slow': 'spin 3s linear infinite',
+			'spin-slow': 'spin 10s linear infinite',
 			'rspin-slow': 'rspin 20s linear infinite', // Use rspin keyframes for reverse spin
 		  },
 		  keyframes: {
