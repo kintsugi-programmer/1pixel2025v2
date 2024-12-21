@@ -9,6 +9,21 @@ export default {
   ],
   theme: {
   	extend: {
+		animation: {
+			'spin-slow': 'spin 3s linear infinite',
+			'rspin-slow': 'rspin 20s linear infinite', // Use rspin keyframes for reverse spin
+		  },
+		  keyframes: {
+			spin: {
+			  from: { transform: 'rotate(0deg)' },
+			  to: { transform: 'rotate(360deg)' },
+			},
+			rspin: {
+			  from: { transform: 'rotate(360deg)' }, // Start at 360° and go to 0°
+			  to: { transform: 'rotate(0deg)' },
+			},
+		  },
+		
 		fontFamily: {
 			sf: ['SFProDisplayRegular', 'sans-serif'],
 			wc: ['WeirdComic', 'sans-serif'],
