@@ -38,12 +38,38 @@ const Hero = () => {
                 style={{ objectFit: 'contain' }}
               />
           </div>
-
+          <div className="absolute top-[9.5rem] z-3 left-[60rem] right-2">  
+              <Image
+                src="/Hero/Star Outline.svg"
+                alt="hcd logo"
+                width={100}
+                height={100}
+                style={{ objectFit: 'contain' }}
+              />
+          </div>
+          <div className="absolute top-[10.5rem] z-3 left-[51rem] right-2">  
+              <Image
+                src="/Hero/Star Yellow fill.svg"
+                alt="hcd logo"
+                width={200}
+                height={100}
+                style={{ objectFit: 'contain' }}
+              />
+          </div>
           <div className="absolute top-[15rem]  left-[37rem] right-2">  
               <Image
                 src="/Hero/Pink Shape.svg"
                 alt="hcd logo"
                 width={550}
+                height={100}
+                style={{ objectFit: 'contain' }}
+              />
+          </div>
+          <div className="absolute top-[10.5rem] z-3 left-[21rem] right-2">  
+              <Image
+                src="/Hero/Star fill.svg"
+                alt="hcd logo"
+                width={200}
                 height={100}
                 style={{ objectFit: 'contain' }}
               />
@@ -94,15 +120,18 @@ const Hero = () => {
                 style={{ objectFit: 'contain' }}
               />
           </div>
-          <div className="absolute top-[18rem] z-3 left-[19rem] right-2">  
+          <div className="absolute top-[19.5rem] z-3 left-[21rem] right-2">  
               <Image
-                src="/Hero/Group 11523.svg"
+                src="/Hero/Group 11524.svg"
                 alt="hcd logo"
-                width={100}
+                width={125}
                 height={100}
                 style={{ objectFit: 'contain' }}
               />
           </div>
+
+
+
         <div className="mx-20 text-center">
         <div style={{ fontFamily: 'WeirdComicItalic, sans-serif' }}
  className="text-8xl absolute top-[16rem] left-[30rem] z-5 text-[#FAD85E]">
