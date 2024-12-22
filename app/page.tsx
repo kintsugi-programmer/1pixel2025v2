@@ -10,14 +10,13 @@ import { VelocityScroll } from "@/components/ui/scroll-based-velocity";
 import Image from "next/image";
 import Nav from "@/component/Nav";
 
-
-import { AboutButton,GetTicketsButton,LearnMore  } from "@/components/ui/Buttons";
+import { AboutButton,GetTicketsButton,LearnMore,Spons  } from "@/components/ui/Buttons";
 import Link from "next/link";
 import { Cursor } from 'react-creative-cursor';
 import 'react-creative-cursor/dist/styles.css';
 import WordRotate from "@/components/ui/word-rotate";
 import { motion } from "framer-motion";
-
+import { PinContainer } from "@/components/ui/3d-pin";
 
 
 export default function Home() {
@@ -49,7 +48,48 @@ const Tickets = () => {
 const Sponsors = () => {
   return (
     <section id="sponsors">
-    <h2>Sponsors</h2>
+      
+      <div className="h-[40rem] w-full flex flex-col items-center justify-center">
+      <WordRotate
+      className="pb-10 sm:text-7xl text-4xl text-[#FFF6E1] "
+      
+      words={["Sponsors", "Stakeholders" ,"Endorsers","Backers"]}
+    />
+        
+  <PinContainer
+    title="https://www.adobe.com/"
+    href="https://www.adobe.com/"
+  >
+    <div className="flex basis-full flex-col p-4 tracking-tight text-black sm:basis-1/2 w-[20rem] h-[20rem]">
+      <div className="max-w-xs !m-0 font-bold  text-2xl text-black">
+      Adobe
+      </div>
+      <div className="text-base !m-0 !p-0">
+      <div className="">
+      ✨Platinum Partner✨
+        </div>
+        <span className="">
+        Adobe is a global leader in creative software, known for products like Photoshop and Illustrator. It empowers professionals in digital media, design, and content creation.
+
+        </span>
+      </div>
+      <div className="w-full h-full mt-4">
+        <Image
+          src="/spons/adobe.png"
+          alt="hcd logo"
+          className="object-cover w-full h-full rounded-lg"
+          width={600}
+          height={100}
+        />
+      </div>
+    </div>
+  </PinContainer>
+  
+</div>
+<div className="flex justify-center pb-10"><Spons/></div>
+
+
+
   </section>
   )
 }

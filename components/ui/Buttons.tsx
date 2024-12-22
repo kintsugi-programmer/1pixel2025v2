@@ -26,7 +26,17 @@ export const LearnMore = () => {
     </StyledWrapper2>
   );
 }
-
+export const Spons = () => {
+  return (
+    <StyledWrapper2>
+      <button className="learn-more ">
+      
+      Call For Sponsors
+        
+      </button>
+    </StyledWrapper2>
+  );
+}
 export const GetTicketsButton = () => {
   return (
     <StyledWrapper2>
