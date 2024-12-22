@@ -42,7 +42,7 @@ const Tickets = () => {
   return (
     <section id="tickets">
     <div
-      className="h-[50rem] w-full rounded-3xl flex bg-[#E08ABA] flex-col items-center justify-start pt-1 mx-auto relative"
+      className="h-[50rem] w-full rounded-3xl flex bg-[#E08ABA] flex-col items-center justify-start pt-1 mx-auto relative "
       style={{
         backgroundImage: "url('/FilterImages/Strokes texture 2.png')",
         backgroundSize: 'cover',
@@ -55,7 +55,18 @@ const Tickets = () => {
 
   
       {/* Ticket 2 */}
-      <div className="absolute top-[2rem] left-[17rem] group">
+      <div className="group">
+      <div className="absolute bottom-[0rem] left-[0rem] group">
+        <Image
+          src="Tickets/T5.svg"
+          alt="Ticket 1"
+          className="transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
+          width={230}
+          height={100}
+          style={{ objectFit: 'contain' }}
+        />
+      </div>
+      <div className="absolute top-[2rem] left-[17rem] ">
         <Image
           src="Tickets/T2.svg"
           alt="Ticket 2"
@@ -65,22 +76,12 @@ const Tickets = () => {
           style={{ objectFit: 'contain' }}
         />
       </div>
-      <div className="absolute top-[18rem] left-[45rem] group">
+      <div className="absolute top-[18rem] left-[45rem] ">
         <Image
           src="Tickets/T1.svg"
           alt="Ticket 1"
           className="transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
           width={700}
-          height={100}
-          style={{ objectFit: 'contain' }}
-        />
-      </div>
-      <div className="absolute top-[0rem] right-[0rem] group">
-        <Image
-          src="Tickets/T3.svg"
-          alt="Ticket 1"
-          className="transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
-          width={600}
           height={100}
           style={{ objectFit: 'contain' }}
         />
@@ -105,6 +106,18 @@ const Tickets = () => {
           style={{ objectFit: 'contain' }}
         />
       </div>
+      </div>
+      <div className="absolute top-[0rem] right-[0rem] group">
+        <Image
+          src="Tickets/T3.svg"
+          alt="Ticket 1"
+          className="transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
+          width={600}
+          height={100}
+          style={{ objectFit: 'contain' }}
+        />
+      </div>
+      
       <div className="absolute bottom-[0rem] left-[10rem] group">
         <Image
           src="Tickets/T6.svg"
@@ -115,16 +128,7 @@ const Tickets = () => {
           style={{ objectFit: 'contain' }}
         />
       </div>
-      <div className="absolute bottom-[0rem] left-[0rem] group">
-        <Image
-          src="Tickets/T5.svg"
-          alt="Ticket 1"
-          className="transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
-          width={230}
-          height={100}
-          style={{ objectFit: 'contain' }}
-        />
-      </div>
+
 
       <div className="absolute pt-[12rem] pl-[0rem] sm:pt-[40rem] sm:pl-[60rem] "><GetTicketsButton /></div>
     </div>
