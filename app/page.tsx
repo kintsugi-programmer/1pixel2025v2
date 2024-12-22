@@ -390,7 +390,52 @@ const Events = () => {
 const Contact = () => {
   return (
     <section id="contact">
-    <h2>Contact Us</h2>
+    <div className="h-[40rem] sm:h-[30rem] w-full flex flex-col sm:flex-row sm:space-x-40 sm:space-y-0 space-y-6 px-5 items-center justify-center ">
+    <div className=" col-span-0 rounded-2xl overflow-hidden  ">
+
+<div style={{ fontFamily: 'WeirdComicItalic, sans-serif' }} 
+         className=" sm:text-5xl flex justify-center text-center sm:text-left sm:justify-start text-4xl text-[#FFF6E1]">
+      Stay<br />
+      Connected
+      <Image
+                src="/Hero/Plane.svg"
+                alt="hcd logo"
+                
+                width={150}
+                height={100}
+                style={{ objectFit: 'contain' }}
+              />
+    </div>
+    Department of Human Centered Design,<br />
+Indraprastha Institute of Information Technology Delhi (IIIT-Delhi) ,<br />
+New Delhi, Delhi 110020
+  
+</div>
+    <div className=" col-span-1 rounded-2xl overflow-hidden  border-4 border-[#FFF6E1] sm:block hidden">
+  <iframe
+    
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.827615231125!2d77.26982302618208!3d28.544900738053585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3e45d85d3e3%3A0x691393414902968e!2sIIIT-Delhi%20R%26D%20Building!5e0!3m2!1sen!2sin!4v1726605696874!5m2!1sen!2sin"
+    width="400"
+    height="300"
+    
+    allowFullScreen
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+  />
+</div>
+<div className=" col-span-1 rounded-2xl overflow-hidden  border-4 border-[#FFF6E1] sm:hidden block">
+  <iframe
+    
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.827615231125!2d77.26982302618208!3d28.544900738053585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3e45d85d3e3%3A0x691393414902968e!2sIIIT-Delhi%20R%26D%20Building!5e0!3m2!1sen!2sin!4v1726605696874!5m2!1sen!2sin"
+    width="250"
+    height="250"
+    
+    allowFullScreen
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+  />
+</div>
+    </div>
   </section>
   )
 }
