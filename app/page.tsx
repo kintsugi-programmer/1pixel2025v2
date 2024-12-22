@@ -730,7 +730,7 @@ const Hero = () => {
 
       {/* 3rd div: Below laptop size */}
       <div className="block xl:hidden p-4 text-center">
-      <div className="flex items-center pt-40 justify-center">
+      <div className="flex items-center pt-24 justify-center">
         <Image
           src="/Hero/Landing Element.svg"
           alt="hcd logo"
@@ -739,6 +739,17 @@ const Hero = () => {
           style={{ objectFit: 'contain' }}
         />
       </div>
+      
+          <div className="text-left py-2 text-xl " style={{ fontFamily: 'LongWeekend, sans-serif' }} >Welcome to the 3rd Edition of 1Pixel Design Conference 2025.
+          <br />North India's Largest Student-Led Design Event at IIIT-Delhi.
+          
+          <div className="text-justify text-[#FBD75E] ">9:30am-5pm <span className="text-justify text-[#458F64] font-bold ">|</span> 4th - 5th January 2025  
+           <span className="text-justify text-[#458F64] font-bold "> |</span> R&D, IIIT-Delhi</div>
+           <div className="justify-center flex flex-row space-x-5">          <AboutButton/> <GetTicketsButton />
+          </div>
+
+        </div>
+
         
       </div>
 
