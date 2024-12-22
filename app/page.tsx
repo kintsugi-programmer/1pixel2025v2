@@ -11,7 +11,7 @@ import Image from "next/image";
 import Nav from "@/component/Nav";
 
 
-import { AboutButton,GetTicketsButton  } from "@/components/ui/Buttons";
+import { AboutButton,GetTicketsButton,LearnMore  } from "@/components/ui/Buttons";
 import Link from "next/link";
 import { Cursor } from 'react-creative-cursor';
 import 'react-creative-cursor/dist/styles.css';
@@ -141,7 +141,11 @@ const Events = () => {
               /></div>
     <p className="sm:pr-[3rem]">
     Saptarshi, is an engineer from IIT Madras who has turned into a product designer & content creator, based in Bangalore. He is Director of Design at Swiggy and is a highly influential figure in the fields of design, startups & content creation.    </p>
-  </div>
+  
+    <Link href="https://sapta.me/" className="">
+  <button className="px-4 py-2  rounded-md border border-black bg-white text-black text-sm hover:shadow-[4px_4px_0px_0px_rgba(0,0,0)] transition duration-200">
+  Learn More
+</button></Link></div>
 
   {/* Right-aligned paragraph */}
   <div className="w-1/2 text-justify">
@@ -156,7 +160,10 @@ const Events = () => {
               /></div>
     <p>
     Don Norman is a renowned design thinker, cognitive scientist, and author of The Design of Everyday Things. As a pioneer of user-centered design, he has transformed how we create intuitive and functional products, emphasizing human-centered innovation.    </p>
-  </div>
+  <Link href="https://jnd.org/" className="">
+  <button className="px-4 py-2  rounded-md border border-black bg-white text-black text-sm hover:shadow-[4px_4px_0px_0px_rgba(0,0,0)] transition duration-200">
+  Learn More
+</button></Link></div>
   <div className="w-1/2 text-justify">
   <div className="group">
   <Image
@@ -172,7 +179,10 @@ const Events = () => {
 
     <p className="sm:pr-[3rem]">
     Manohar Swaminathan is a Senior Principal Researcher at Microsoft Research India, focusing on virtual and augmented reality technologies for empowering visually impaired individuals. He also explores IoT and cloud solutions for large-scale impact in emerging markets.    </p>
-  </div>
+    <Link href="https://www.microsoft.com/en-us/research/people/swmanohmicrosoft-com/" className="">
+  <button className="px-4 py-2  rounded-md border border-black bg-white text-black text-sm hover:shadow-[4px_4px_0px_0px_rgba(0,0,0)] transition duration-200">
+  Learn More
+</button></Link> </div>
   
 </div>
     </div>

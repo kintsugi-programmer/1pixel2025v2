@@ -14,6 +14,19 @@ export const AboutButton = () => {
   );
 }
 
+// <Link href="" className=""><LearnMore/></Link>
+export const LearnMore = () => {
+  return (
+    <StyledWrapper2>
+      <button className="learn-more ">
+      
+      Learn More
+        
+      </button>
+    </StyledWrapper2>
+  );
+}
+
 export const GetTicketsButton = () => {
   return (
     <StyledWrapper2>
