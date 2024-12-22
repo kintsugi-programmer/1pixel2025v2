@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 const Nav = () => {
   return (
-    <div className="py-2 px-4 text-[#f5f5f5] text-bold sticky">
+    <div className="py-2 px-4 z-50 text-bold sticky">
     <div className="font-sf w-full py-4 bg-black flex items-center justify-between px-12 text-[#FFF6E1]">
       {/* Logo and Conference Name */}
       <Link href="/"> <div className="flex items-center space-x-4">

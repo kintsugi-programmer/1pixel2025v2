@@ -293,7 +293,7 @@ const Past = () => {
 
 const Footer = () => {
   return (
-    <div className="py-10 h-10 px-10">
+    <div className="py-10 h-10 px-10 text-[#FFF6E1]">
       <hr />
       Made with Love by 1Px DesCon Team
     </div>

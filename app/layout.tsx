@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="antialiased bg-[#131313] text-white">
         {/* Responsive Navbar */}
-        <div className="w-full bg-[#131313]  fixed  left-0 z-10">
+        <div className="w-full bg-[#131313]  fixed  left-0 z-50">
 
           <Nav />
         </div>

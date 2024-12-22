@@ -30,7 +30,7 @@ export const ParallaxScroll = ({
 
   return (
     <div
-      className={cn("h-[40rem] items-start z-50 overflow-y-auto w-full", className)}
+      className={cn("h-[40rem] items-start z-40 overflow-y-auto w-full", className)}
       ref={gridRef}
     >
       <style jsx>{`
@@ -39,7 +39,7 @@ export const ParallaxScroll = ({
     }
   `}</style>
       <div
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start z-50 max-w-5xl mx-auto gap-10 py-4 px-10"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start z-40 max-w-5xl mx-auto gap-10 py-4 px-10"
         ref={gridRef}
       > 
         <div className="grid gap-10">
