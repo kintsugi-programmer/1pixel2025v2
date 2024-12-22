@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css"; // Ensure this imports your custom font styles
 // style={{ fontFamily: 'LongWeekend, sans-serif' }}
 import Nav from "@/component/Nav";
-
+import { Dock } from "@/components/Dock";
 
 export const metadata: Metadata = {
   title: "1Pixel'25 3rd Edition",
@@ -24,9 +24,8 @@ export default function RootLayout({
         </div>
         {children}
         {/* DOCK */}
-        {/* <div className="w-full fixed bottom-5 left-0 z-10">
-            
-        </div> */}
+        <div className="w-full fixed bottom-5 left-0 z-50"><Dock /></div>
+
       </body>
     </html>
   );
