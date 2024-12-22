@@ -7,7 +7,6 @@ import GradualSpacing from "@/components/ui/gradual-spacing";
 // import Hero from "@/component/Hero";
 import { VelocityScroll } from "@/components/ui/scroll-based-velocity";
 import Image from "next/image";
-import Nav from "@/component/Nav";
 
 import { AboutButton,GetTicketsButton,LearnMore,Spons  } from "@/components/ui/Buttons";
 import Link from "next/link";
@@ -21,7 +20,7 @@ import { PinContainer } from "@/components/ui/3d-pin";
 export default function Home() {
   return (<div className="" data-cursor-color="#FBD75E">
     <Cursor isGelly={true} />
-  <Nav />
+ 
   <Hero />
   <About />
   <Past />
@@ -261,14 +260,14 @@ const Past = () => {
     </div>
     <div className="flex flex-col items-center sm:items-start justify-between  pt-10 gap-y-5 ">
   {/* Left-aligned paragraph */}
-  <div className=" w-2/2 text-justify">
+  <div className=" w-2/2 text-justify px-5 sm:px-0">
     <p>
       1Pixel offers a unique opportunity to gain insights into the evolving world of design. With a focus on empowering attendees to stay at the forefront of innovation, the 1Pixel Design Conference is a pivotal event for those passionate about shaping the future of design.
     </p>
   </div>
 
   {/* Right-aligned paragraph */}
-  <div className="w-2/2 text-justify">
+  <div className="w-2/2 text-justify px-5 sm:px-0">
     <p>
       This immersive experience brings together a wealth of knowledge from speakers with extensive and varied expertise, fostering an environment where future design leaders can learn, grow, and establish valuable connections.
     </p>
