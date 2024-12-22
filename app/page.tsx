@@ -30,8 +30,9 @@ export default function Home() {
   <Events />
   <Sponsors />
   <Tickets />
-  <Contact />
   <Memories/>
+  <Contact />
+
   <Footer />
   </div>
    
@@ -60,7 +61,7 @@ const Past = () => {
     className="w-full h-auto sm:pl-[10rem] flex flex-col items-center sm:items-start sm:flex-row"
     ><div>
           <div style={{ fontFamily: 'WeirdComicItalic, sans-serif' }} 
-         className="pt-20 sm:text-7xl flex justify-center text-center sm:text-left sm:justify-start text-4xl text-[#FFF6E1]">
+         className="pt-40 sm:text-7xl flex justify-center text-center sm:text-left sm:justify-start text-4xl text-[#FFF6E1]">
       Past <br />
       Editions
     </div>
@@ -99,7 +100,85 @@ const Past = () => {
 const Events = () => {
   return (
     <section id="events">
-    <h2>Events</h2>
+      <div className='h-auto  w-full rounded-3xl flex bg-[#EA8A5D] flex-col items-center justify-start pt-1 mx-auto'
+  
+  style={{
+    backgroundImage: "url('/FilterImages/Strokes texture 2.png')",
+    backgroundSize: 'cover',
+    backgroundPosition: 'center center',
+    backgroundRepeat: 'no-repeat',
+    backgroundAttachment: 'fixed',
+  }}>
+
+
+    <WordRotate
+      className="pt-40 sm:text-7xl text-4xl text-[#131313] "
+      
+      words={["Events", "Experience" ,"Learnings"]}
+    />
+    <div style={{ fontFamily: 'WeirdComic, sans-serif' }} 
+         className="sm:text-5xl flex justify-center text-center  text-4xl text-[#FFF6E1]">
+      India's Design Transistion: Uniting <br />Vision With Execution
+    </div>
+    <div className="text-black sm:text-3xl text-xl pt-1 text-center" style={{ fontFamily: 'LongWeekend, sans-serif' }}>
+21st DECEMBER, 2024<br />
+
+
+    </div>
+    <div className="sm:px-60 px-10 text-center text-black font-bold">The panel discussion on India's Design Transition: Uniting Vision with Execution, featuring Don Norman, Saptarshi Prakash, and Manohar Swaminathan on December 21, 2025, captivated over 200 attendees with profound insights into harmonizing innovative ideas with actionable strategies.</div>
+    <div>
+    <div className="flex flex-col text-black items-center sm:items-start sm:flex-row justify-between  pt-10 pb-[10rem] sm:px-[15rem] px-2 gap-y-5 sm:gap-x-[5rem]">
+  {/* Left-aligned paragraph */}
+  <div className=" w-1/2 text-justify">
+  <div className="group">
+  <Image
+                src="/Events/sap.svg"
+                alt="hcd logo"
+                width={250}
+                className="pt-5 pb-14 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center "
+                height={100}
+                style={{ objectFit: 'contain' }}
+              /></div>
+    <p className="sm:pr-[3rem]">
+    Saptarshi, is an engineer from IIT Madras who has turned into a product designer & content creator, based in Bangalore. He is Director of Design at Swiggy and is a highly influential figure in the fields of design, startups & content creation.    </p>
+  </div>
+
+  {/* Right-aligned paragraph */}
+  <div className="w-1/2 text-justify">
+  <div className="group">
+  <Image
+                src="/Events/don.svg"
+                alt="hcd logo"
+                className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
+                width={300}
+                height={100}
+                style={{ objectFit: 'contain' }}
+              /></div>
+    <p>
+    Don Norman is a renowned design thinker, cognitive scientist, and author of The Design of Everyday Things. As a pioneer of user-centered design, he has transformed how we create intuitive and functional products, emphasizing human-centered innovation.    </p>
+  </div>
+  <div className="w-1/2 text-justify">
+  <div className="group">
+  <Image
+    src="/Events/man.svg"
+    alt="hcd logo"
+    width={250}
+    height={100}
+    className="pt-5 pb-14 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
+    style={{ objectFit: 'contain' }}
+  />
+</div>
+
+
+    <p className="sm:pr-[3rem]">
+    Manohar Swaminathan is a Senior Principal Researcher at Microsoft Research India, focusing on virtual and augmented reality technologies for empowering visually impaired individuals. He also explores IoT and cloud solutions for large-scale impact in emerging markets.    </p>
+  </div>
+  
+</div>
+    </div>
+  
+
+  </div>
   </section>
   )
 }
@@ -367,7 +446,7 @@ const Hero = () => {
         </div>
         
         </div>
-        <div className="absolute top-[34rem] px-40">
+        <div className="absolute top-[36rem] px-40">
           <div className="text-left text-3xl " style={{ fontFamily: 'LongWeekend, sans-serif' }} >Welcome to the 3rd Edition of 1Pixel Design Conference 2025.
           <br />North India's Largest Student-Led Design Event at IIIT-Delhi.
           
@@ -378,7 +457,7 @@ const Hero = () => {
 
         </div>
         
-        <div className="absolute top-[34rem] right-40">
+        <div className="absolute top-[37rem] right-40">
           <div className="flex flex-row space-x-5">          <AboutButton/> <GetTicketsButton />
          </div>
 
