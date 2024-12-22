@@ -795,12 +795,7 @@ const images = [
   "/images/5.png",
   "/images/6.png",
   "/images/7.png",
-  "/FilterImages/8.png",
-  "/FilterImages/9.png",
-  "/FilterImages/10.png",
-  "/FilterImages/11.png",
-  "/FilterImages/12.png",
-  "/FilterImages/13.png",  
+
   "/images/8.png",
   "/images/9.png",
   "/images/10.png",
@@ -811,17 +806,6 @@ const images = [
   "/images/15.png",
   "/images/16.png",
   "/images/19.png",
-  "/FilterImages/1.png",
-  "/FilterImages/2.png",
-  "/FilterImages/3.png",
-  "/FilterImages/4.png",
-  "/FilterImages/5.png",
-  "/FilterImages/6.png",
 
-
-  "/FilterImages/14.png",
-  "/FilterImages/15.png",
-  "/FilterImages/16.png",
-  "/FilterImages/19.png",
 
 ]
