@@ -2,6 +2,40 @@
 import styled from 'styled-components';
 import Link from "next/link";
 
+export const ContactUs = () => {
+  return (
+    <StyledWrapper2>
+      <button className="learn-more ">
+      <Link href="mailto:1pxdesignconf@iiitd.ac.in?subject=Enquiry: Here&body=Body Here">
+      Contact Us
+        </Link>
+      </button>
+    </StyledWrapper2>
+  );
+}
+export const Archive = () => {
+  return (
+    <StyledWrapper2>
+      <button className="learn-more ">
+      <Link href="/">
+      Archive
+        </Link>
+      </button>
+    </StyledWrapper2>
+  );
+}
+export const JoinCommunity = () => {
+  return (
+    <StyledWrapper2>
+      <button className="learn-more ">
+      <Link href="https://chat.whatsapp.com/ISykFouJbWzLFfAnz5PHrv">
+      Join Community
+        </Link>
+      </button>
+    </StyledWrapper2>
+  );
+}
+
 export const AboutButton = () => {
   return (
     <StyledWrapper2>

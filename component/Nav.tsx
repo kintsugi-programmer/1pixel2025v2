@@ -4,7 +4,7 @@ import Image from 'next/image';
 const Nav = () => {
   return (
     <div className="py-2 px-4 z-50 text-bold sticky">
-    <div className="font-sf w-full py-4 bg-black flex items-center justify-between px-12 text-[#FFF6E1]">
+    <div className="font-sf w-full py-4  flex items-center justify-between px-12 text-[#FFF6E1]">
       {/* Logo and Conference Name */}
       <Link href="/"> <div className="flex items-center space-x-4">
              <Image
@@ -21,7 +21,7 @@ const Nav = () => {
 
      <div className="sm:block hidden">
        {/* Navigation Links */}
-       <div className="flex space-x-2 text-sm">
+       <div className="flex space-x-5 ">
         <Link href="#about">
           <span className="cursor-pointer hover:text-[#d1d1d1] transition-colors">About Us</span>
         </Link>

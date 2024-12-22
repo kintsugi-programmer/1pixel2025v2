@@ -8,7 +8,7 @@ import GradualSpacing from "@/components/ui/gradual-spacing";
 import { VelocityScroll } from "@/components/ui/scroll-based-velocity";
 import Image from "next/image";
 
-import { AboutButton,GetTicketsButton,LearnMore,Spons  } from "@/components/ui/Buttons";
+import { AboutButton,GetTicketsButton,LearnMore,Spons ,JoinCommunity,Archive,ContactUs } from "@/components/ui/Buttons";
 import Link from "next/link";
 import { Cursor } from 'react-creative-cursor';
 import 'react-creative-cursor/dist/styles.css';
@@ -272,11 +272,13 @@ const Past = () => {
       This immersive experience brings together a wealth of knowledge from speakers with extensive and varied expertise, fostering an environment where future design leaders can learn, grow, and establish valuable connections.
     </p>
   </div>
+  <div className="flex justify-center pb-10"><Archive/></div>
+
   
 </div>
 
     </div>
-    <div data-cursor-magnetic>
+    <div>
     <Image
                 src="/Past/Past.svg"
                 alt="hcd logo"
@@ -396,10 +398,10 @@ const Events = () => {
 }
 const Contact = () => {
   return (
-    <section id="contact" data-cursor-magnetic>
+    <section id="contact" >
     <div className="h-[40rem] sm:h-[30rem] w-full flex flex-col sm:flex-row sm:space-x-40 sm:space-y-0 space-y-6 px-5 items-center justify-center ">
-    <div className=" col-span-0 rounded-2xl overflow-hidden  ">
-
+    <div className=" col-span-0  overflow-hidden  ">
+<div>
 <div style={{ fontFamily: 'WeirdComicItalic, sans-serif' }} 
          className=" sm:text-5xl flex justify-center text-center sm:text-left sm:justify-start text-4xl text-[#FFF6E1]">
       Stay<br />
@@ -416,9 +418,11 @@ const Contact = () => {
     Department of Human Centered Design,<br />
 Indraprastha Institute of Information Technology Delhi (IIIT-Delhi) ,<br />
 New Delhi, Delhi 110020
-<br />mailto:1pxdesignconf@iiitd.ac.in
-  
+
 </div>
+<div className="flex flex-row  space-x-4 py-5">          <JoinCommunity/> <ContactUs />
+</div></div>
+
     <div className=" col-span-1 rounded-2xl overflow-hidden  border-4 border-[#FFF6E1] sm:block hidden">
   <iframe
     
