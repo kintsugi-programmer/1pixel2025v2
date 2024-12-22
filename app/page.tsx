@@ -1,7 +1,6 @@
 'use client'
 
 
-import Footer from "@/component/Footer";
 import { ParallaxScroll } from "@/components/ParallexScroll";
 import WordPullUp from "@/components/ui/word-pull-up";
 import GradualSpacing from "@/components/ui/gradual-spacing";
@@ -290,6 +289,15 @@ const Past = () => {
     </div>
     </div>
   </section>
+  )
+}
+
+const Footer = () => {
+  return (
+    <div className="py-10 h-10 px-10">
+      <hr />
+      Made with Love by 1Px DesCon Team
+    </div>
   )
 }
 const Events = () => {
