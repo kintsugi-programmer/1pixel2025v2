@@ -55,8 +55,8 @@ const Sponsors = () => {
       
       words={["Sponsors", "Stakeholders" ,"Endorsers","Backers"]}
     />
-        
-  <PinContainer
+    <div className="flex sm:flex-row flex-col">
+    <PinContainer
     title="https://www.adobe.com/"
     href="https://www.adobe.com/"
   >
@@ -84,6 +84,61 @@ const Sponsors = () => {
       </div>
     </div>
   </PinContainer>
+  <PinContainer
+    title="https://cdnm.iiitd.ac.in/"
+    href="https://cdnm.iiitd.ac.in/"
+  >
+    <div className="flex basis-full flex-col p-4 tracking-tight text-black sm:basis-1/2 w-[20rem] h-[20rem]">
+      <div className="max-w-xs !m-0 font-bold  text-2xl text-black">
+      CDNM
+      </div>
+      <div className="text-base !m-0 !p-0">
+      <div className="">
+        </div>
+        <span className="">
+        The Center for Design and New Media, supported by TCS Foundation, advances innovation in HCI, Interaction Design, and immersive tech for impactful applications in education, healthcare, and beyond.        </span>
+      </div>
+      <div className="w-full h-full mt-4">
+        <Image
+          src="/spons/CDNM.svg"
+          alt="hcd logo"
+          className="object-cover w-full h-full rounded-lg"
+          width={600}
+          height={100}
+        />
+      </div>
+    </div>
+  </PinContainer>
+  <PinContainer
+    title="https://hcd.iiitd.ac.in/"
+    href="https://hcd.iiitd.ac.in/"
+  >
+    <div className="flex basis-full flex-col p-4 tracking-tight text-black sm:basis-1/2 w-[20rem] h-[20rem]">
+      <div className="max-w-xs !m-0 font-bold  text-2xl text-black">
+      HCD
+      </div>
+      <div className="text-base !m-0 !p-0">
+      <div className="">
+      
+        </div>
+        <span className="">
+        The Department of Human-Centered Design at IIIT Delhi blends computing with design thinking, focusing on HCI, VR, Animation, and more to create next-gen design engineers.
+        </span>
+      </div>
+      <div className="w-full h-full mt-4">
+        <Image
+          src="/spons/HCD.svg"
+          alt="hcd logo"
+          className="object-cover w-full h-full rounded-lg"
+          width={600}
+          height={100}
+        />
+      </div>
+    </div>
+  </PinContainer>
+    </div>
+        
+
   
 </div>
 <div className="flex justify-center pb-10"><Spons/></div>
