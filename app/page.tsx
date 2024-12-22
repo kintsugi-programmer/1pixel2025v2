@@ -38,7 +38,7 @@ export default function Home() {
 }
 const Tickets = () => {
   return (
-    <section id="tickets">
+    <section id="tickets" data-cursor-size="100px">
     <div
       className="h-[50rem] w-full rounded-3xl flex bg-[#E08ABA] flex-col items-center justify-start pt-1 mx-auto relative "
       style={{
@@ -145,7 +145,7 @@ const Tickets = () => {
 
 const Sponsors = () => {
   return (
-    <section id="sponsors">
+    <section id="sponsors" data-cursor-color="#E08ABA" >
       
       <div className="h-[85rem] sm:h-[40rem] w-full flex flex-col  items-center justify-center">
       <WordRotate
@@ -249,25 +249,25 @@ const Sponsors = () => {
 
 const Past = () => {
   return (
-    <section id="past">
+    <section id="past"  >
     <div
     className="w-full h-auto sm:pl-[10rem] flex flex-col items-center sm:items-start sm:flex-row"
-    ><div>
-          <div style={{ fontFamily: 'WeirdComicItalic, sans-serif' }} 
+    ><div >
+          <div data-cursor-magnetic style={{ fontFamily: 'WeirdComicItalic, sans-serif' }} 
          className="pt-40 sm:text-7xl flex justify-center text-center sm:text-left sm:justify-start text-4xl text-[#FFF6E1]">
       Past <br />
       Editions
     </div>
     <div className="flex flex-col items-center sm:items-start justify-between  pt-10 gap-y-5 ">
   {/* Left-aligned paragraph */}
-  <div className=" w-2/2 text-justify px-5 sm:px-0">
+  <div className=" w-2/2 text-justify px-5 sm:px-0" data-cursor-magnetic>
     <p>
       1Pixel offers a unique opportunity to gain insights into the evolving world of design. With a focus on empowering attendees to stay at the forefront of innovation, the 1Pixel Design Conference is a pivotal event for those passionate about shaping the future of design.
     </p>
   </div>
 
   {/* Right-aligned paragraph */}
-  <div className="w-2/2 text-justify px-5 sm:px-0">
+  <div className="w-2/2 text-justify px-5 sm:px-0" data-cursor-magnetic>
     <p>
       This immersive experience brings together a wealth of knowledge from speakers with extensive and varied expertise, fostering an environment where future design leaders can learn, grow, and establish valuable connections.
     </p>
@@ -276,7 +276,7 @@ const Past = () => {
 </div>
 
     </div>
-    <div>
+    <div data-cursor-magnetic>
     <Image
                 src="/Past/Past.svg"
                 alt="hcd logo"
@@ -301,7 +301,7 @@ const Footer = () => {
 }
 const Events = () => {
   return (
-    <section id="events">
+    <section id="events" data-cursor-size="100px" data-cursor-color="#E08ABA"> 
       <div className='h-auto  w-full rounded-3xl flex bg-[#EA8A5D] flex-col items-center justify-start pt-1 mx-auto'
   
   style={{
@@ -318,7 +318,7 @@ const Events = () => {
       
       words={["Events", "Experience" ,"Learnings"]}
     />
-    <div style={{ fontFamily: 'WeirdComic, sans-serif' }} 
+    <div  style={{ fontFamily: 'WeirdComic, sans-serif' }} 
          className="sm:text-5xl flex justify-center text-center  text-4xl text-[#FFF6E1]">
       India's Design Transistion: Uniting <br />Vision With Execution
     </div>
@@ -396,7 +396,7 @@ const Events = () => {
 }
 const Contact = () => {
   return (
-    <section id="contact">
+    <section id="contact" data-cursor-magnetic>
     <div className="h-[40rem] sm:h-[30rem] w-full flex flex-col sm:flex-row sm:space-x-40 sm:space-y-0 space-y-6 px-5 items-center justify-center ">
     <div className=" col-span-0 rounded-2xl overflow-hidden  ">
 
@@ -416,6 +416,7 @@ const Contact = () => {
     Department of Human Centered Design,<br />
 Indraprastha Institute of Information Technology Delhi (IIIT-Delhi) ,<br />
 New Delhi, Delhi 110020
+<br />mailto:1pxdesignconf@iiitd.ac.in
   
 </div>
     <div className=" col-span-1 rounded-2xl overflow-hidden  border-4 border-[#FFF6E1] sm:block hidden">
@@ -449,9 +450,9 @@ New Delhi, Delhi 110020
 
 const About = () => {
   return (<>
-    <section id="about"
+    <section id="about"  
  >
-  <div className='h-auto  w-full rounded-3xl flex bg-[#458F64] flex-col items-center justify-start pt-1 mx-auto h-auto w-full rounded-3xl flex bg-[#458F64]  justify-start pt-1 mx-auto'
+  <div  className='h-auto  w-full rounded-3xl flex bg-[#458F64] flex-col items-center justify-start pt-1 mx-auto h-auto w-full rounded-3xl flex bg-[#458F64]  justify-start pt-1 mx-auto'
   style={{
     backgroundImage: "url('/FilterImages/Strokes texture 2.png')",
     backgroundSize: 'cover',
@@ -459,11 +460,11 @@ const About = () => {
     backgroundRepeat: 'no-repeat',
     backgroundAttachment: 'fixed',
   }}>
-    <div style={{ fontFamily: 'WeirdComicItalic, sans-serif' }} 
+    <div data-cursor-magnetic style={{ fontFamily: 'WeirdComicItalic, sans-serif' }} 
          className="pt-40 sm:text-7xl text-4xl text-[#FAD85E]">
       About Us
     </div>
-    <div className="text-black sm:text-3xl text-xl pt-10 text-center" style={{ fontFamily: 'LongWeekend, sans-serif' }}>
+    <div data-cursor-magnetic className="text-black sm:text-3xl text-xl pt-10 text-center" style={{ fontFamily: 'LongWeekend, sans-serif' }}>
 the 1pixel design Conference serves as the platform for showcasing and <br />
 exploring the latest industry trends.
     </div>
@@ -499,14 +500,14 @@ exploring the latest industry trends.
     <div className="flex flex-col items-center sm:items-start sm:flex-row justify-between  pt-10 pb-[10rem] sm:px-[10rem] px-2 gap-y-5 sm:gap-x-[5rem]">
   {/* Left-aligned paragraph */}
   <div className=" w-1/2 text-justify">
-    <p>
+    <p data-cursor-magnetic>
       1Pixel offers a unique opportunity to gain insights into the evolving world of design. With a focus on empowering attendees to stay at the forefront of innovation, the 1Pixel Design Conference is a pivotal event for those passionate about shaping the future of design.
     </p>
   </div>
 
   {/* Right-aligned paragraph */}
   <div className="w-1/2 text-justify">
-    <p>
+    <p data-cursor-magnetic>
       This immersive experience brings together a wealth of knowledge from speakers with extensive and varied expertise, fostering an environment where future design leaders can learn, grow, and establish valuable connections.
     </p>
   </div>
@@ -517,7 +518,7 @@ exploring the latest industry trends.
 </section></>)};
 const Memories = () => {
     return (<>
-    <section id="memories">
+    <section id="memories" data-cursor-color="#FFF6E1"> 
   <div className='h-auto  w-full rounded-3xl flex bg-[#EA8A5D] flex-col items-center justify-start pt-1 mx-auto'
   
   style={{
@@ -564,7 +565,7 @@ const Hero = () => {
       <div className="hidden xl:block   text-white p-4 text-center">
         
       <div className='h-[820px] top-0 left-0 w-full  object-cover '>
-          <div className="absolute top-[12rem] left-[40rem] right-2">  
+          <div  className="absolute top-[12rem] left-[40rem] right-2">  
               <Image
                 src="/Hero/Chessboard.svg"
                 alt="hcd logo"

@@ -18,10 +18,10 @@ export const AboutButton = () => {
 export const LearnMore = () => {
   return (
     <StyledWrapper2>
-      <button className="learn-more ">
-      
+      <button className="learn-more " >
+      <Link href="#about">
       Learn More
-        
+        </Link>
       </button>
     </StyledWrapper2>
   );
@@ -29,11 +29,14 @@ export const LearnMore = () => {
 export const Spons = () => {
   return (
     <StyledWrapper2>
-      <button className="learn-more ">
       
+      
+      <button className="learn-more ">
+      <Link href="mailto:1pxdesignconf@iiitd.ac.in?subject=Enquiry: Here&body=Body Here">
       Call For Sponsors
-        
+      </Link>
       </button>
+      
     </StyledWrapper2>
   );
 }
@@ -41,7 +44,7 @@ export const GetTicketsButton = () => {
   return (
     <StyledWrapper2>
       <button className="learn-more ">
-      <Link href="#about">
+      <Link href="https://forms.gle/HV8Zn76BbrCXvYwa9">
       Get Tickets
         </Link>
       </button>
