@@ -4,87 +4,88 @@ import Link from "next/link";
 
 export const ContactUs = () => {
   return (
-    <StyledWrapper2>
-      <button className="learn-more ">
-      <Link href="mailto:1pxdesignconf@iiitd.ac.in?subject=Enquiry: Here&body=Body Here">
-      Contact Us
-        </Link>
-      </button>
-    </StyledWrapper2>
+    <Link href="mailto:1pxdesignconf@iiitd.ac.in?subject=Enquiry: Here&body=Body Here">
+      <StyledWrapper2>
+        <button className="learn-more">
+          Contact Us
+        </button>
+      </StyledWrapper2>
+    </Link>
   );
-}
+};
+
 export const Archive = () => {
   return (
-    <StyledWrapper2>
-      <button className="learn-more ">
-      <Link href="/">
-      Archive
-        </Link>
-      </button>
-    </StyledWrapper2>
+    <Link href="/">
+      <StyledWrapper2>
+        <button className="learn-more">
+          Archive
+        </button>
+      </StyledWrapper2>
+    </Link>
   );
-}
+};
+
 export const JoinCommunity = () => {
   return (
-    <StyledWrapper2>
-      <button className="learn-more ">
-      <Link href="https://chat.whatsapp.com/ISykFouJbWzLFfAnz5PHrv">
-      Join Community
-        </Link>
-      </button>
-    </StyledWrapper2>
+    <Link href="https://chat.whatsapp.com/ISykFouJbWzLFfAnz5PHrv">
+      <StyledWrapper2>
+        <button className="learn-more">
+          Join Community
+        </button>
+      </StyledWrapper2>
+    </Link>
   );
-}
+};
 
 export const AboutButton = () => {
   return (
-    <StyledWrapper2>
-      <button className="learn-more ">
-      <Link href="#about">
-      Learn More
-        </Link>
-      </button>
-    </StyledWrapper2>
+    <Link href="#about">
+      <StyledWrapper2>
+        <button className="learn-more">
+          Learn More
+        </button>
+      </StyledWrapper2>
+    </Link>
   );
-}
+};
 
-// <Link href="" className=""><LearnMore/></Link>
 export const LearnMore = () => {
   return (
-    <StyledWrapper2>
-      <button className="learn-more " >
-      <Link href="#about">
-      Learn More
-        </Link>
-      </button>
-    </StyledWrapper2>
+    <Link href="#about">
+      <StyledWrapper2>
+        <button className="learn-more">
+          Learn More
+        </button>
+      </StyledWrapper2>
+    </Link>
   );
-}
+};
+
 export const Spons = () => {
   return (
-    <StyledWrapper2>
-      
-      
-      <button className="learn-more ">
-      <Link href="mailto:1pxdesignconf@iiitd.ac.in?subject=Enquiry: Here&body=Body Here">
-      Call For Sponsors
-      </Link>
-      </button>
-      
-    </StyledWrapper2>
+    <Link href="mailto:1pxdesignconf@iiitd.ac.in?subject=Enquiry: Here&body=Body Here">
+      <StyledWrapper2>
+        <button className="learn-more">
+          Call For Sponsors
+        </button>
+      </StyledWrapper2>
+    </Link>
   );
-}
+};
+
 export const GetTicketsButton = () => {
   return (
-    <StyledWrapper2>
-      <button className="learn-more ">
-      <Link href="https://forms.gle/HV8Zn76BbrCXvYwa9">
-      Get Tickets
-        </Link>
-      </button>
-    </StyledWrapper2>
+    <Link href="https://forms.gle/HV8Zn76BbrCXvYwa9">
+      <StyledWrapper2>
+        <button className="learn-more">
+          Get Tickets
+        </button>
+      </StyledWrapper2>
+    </Link>
   );
-}
+};
+
 const StyledWrapper2 = styled.div`
   button {
    position: relative;
