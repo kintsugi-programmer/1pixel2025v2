@@ -29,6 +29,7 @@ export default function Home() {
   <Events />
   <Sponsors />
   <Tickets />
+  
   <Memories/>
   <Contact />
 
@@ -40,8 +41,103 @@ export default function Home() {
 const Tickets = () => {
   return (
     <section id="tickets">
-    <h2>Tickets</h2>
+    <div
+      className="h-[50rem] w-full rounded-3xl flex bg-[#E08ABA] flex-col items-center justify-start pt-1 mx-auto relative"
+      style={{
+        backgroundImage: "url('/FilterImages/Strokes texture 2.png')",
+        backgroundSize: 'cover',
+        backgroundPosition: 'center center',
+        backgroundRepeat: 'no-repeat',
+        backgroundAttachment: 'fixed',
+      }}
+    >
+      {/* Ticket 1 */}
+
+  
+      {/* Ticket 2 */}
+      <div className="absolute top-[2rem] left-[17rem] group">
+        <Image
+          src="Tickets/T2.svg"
+          alt="Ticket 2"
+          className="transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
+          width={700}
+          height={100}
+          style={{ objectFit: 'contain' }}
+        />
+      </div>
+      <div className="absolute top-[18rem] left-[45rem] group">
+        <Image
+          src="Tickets/T1.svg"
+          alt="Ticket 1"
+          className="transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
+          width={700}
+          height={100}
+          style={{ objectFit: 'contain' }}
+        />
+      </div>
+      <div className="absolute top-[0rem] right-[0rem] group">
+        <Image
+          src="Tickets/T3.svg"
+          alt="Ticket 1"
+          className="transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
+          width={600}
+          height={100}
+          style={{ objectFit: 'contain' }}
+        />
+      </div>
+      <div className="absolute bottom-[0rem] left-[17rem] group">
+        <Image
+          src="Tickets/T7.svg"
+          alt="Ticket 1"
+          className="transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
+          width={80}
+          height={100}
+          style={{ objectFit: 'contain' }}
+        />
+      </div>
+      <div className="absolute bottom-[0rem] left-[15rem] group">
+        <Image
+          src="Tickets/T8.svg"
+          alt="Ticket 1"
+          className="transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
+          width={230}
+          height={100}
+          style={{ objectFit: 'contain' }}
+        />
+      </div>
+      <div className="absolute bottom-[0rem] left-[10rem] group">
+        <Image
+          src="Tickets/T6.svg"
+          alt="Ticket 1"
+          className="transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
+          width={230}
+          height={100}
+          style={{ objectFit: 'contain' }}
+        />
+      </div>
+      <div className="absolute bottom-[0rem] left-[0rem] group">
+        <Image
+          src="Tickets/T5.svg"
+          alt="Ticket 1"
+          className="transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
+          width={230}
+          height={100}
+          style={{ objectFit: 'contain' }}
+        />
+      </div>
+
+      <div className="absolute pt-[12rem] pl-[0rem] sm:pt-[40rem] sm:pl-[60rem] "><GetTicketsButton /></div>
+    </div>
+    
+  
+    {/* Scrolling Text */}
+    <VelocityScroll
+      text="1Pixel 1Pixel 1Pixel 1Pixel "
+      default_velocity={3}
+      className="text-center text-4xl dark:text-white md:text-7xl md:leading-[5rem]"
+    />
   </section>
+  
   )
 }
 
@@ -49,13 +145,13 @@ const Sponsors = () => {
   return (
     <section id="sponsors">
       
-      <div className="h-[40rem] w-full flex flex-col items-center justify-center">
+      <div className="h-[85rem] sm:h-[40rem] w-full flex flex-col  items-center justify-center">
       <WordRotate
       className="pb-10 sm:text-7xl text-4xl text-[#FFF6E1] "
       
       words={["Sponsors", "Stakeholders" ,"Endorsers","Backers"]}
     />
-    <div className="flex sm:flex-row flex-col">
+    <div className="flex sm:flex-row flex-col sm:space-y-0 space-y-20">
     <PinContainer
     title="https://www.adobe.com/"
     href="https://www.adobe.com/"
