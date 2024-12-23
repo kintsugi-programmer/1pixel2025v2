@@ -7,7 +7,7 @@ import GradualSpacing from "@/components/ui/gradual-spacing";
 // import Hero from "@/component/Hero";
 import { VelocityScroll } from "@/components/ui/scroll-based-velocity";
 import Image from "next/image";
-
+import { IconMail } from '@tabler/icons-react';
 import { AboutButton,GetTicketsButton,LearnMore,Spons ,JoinCommunity,Archive,ContactUs } from "@/components/ui/Buttons";
 import Link from "next/link";
 import { Cursor } from 'react-creative-cursor';
@@ -15,8 +15,11 @@ import 'react-creative-cursor/dist/styles.css';
 import WordRotate from "@/components/ui/word-rotate";
 import { motion } from "framer-motion";
 import { PinContainer } from "@/components/ui/3d-pin";
-
-
+import { IconPhone } from '@tabler/icons-react';
+import { IconMapPin } from '@tabler/icons-react';
+import { IconBrandX } from '@tabler/icons-react';
+import { IconBrandInstagram } from '@tabler/icons-react';
+import { IconBrandLinkedin } from '@tabler/icons-react';
 export default function Home() {
   return (<div className="" data-cursor-color="#FBD75E">
     <Cursor isGelly={true} />
@@ -398,59 +401,105 @@ const Events = () => {
 }
 const Contact = () => {
   return (
-    <section id="contact" >
-    <div className="h-[40rem] sm:h-[30rem] w-full flex flex-col sm:flex-row sm:space-x-40 sm:space-y-0 space-y-6 px-5 items-center justify-center ">
-    <div className=" col-span-0  overflow-hidden  ">
-<div>
-<div style={{ fontFamily: 'WeirdComicItalic, sans-serif' }} 
-         className=" sm:text-5xl flex justify-center text-center sm:text-left sm:justify-start text-4xl text-[#FFF6E1]">
-      Stay<br />
-      Connected
-      <Image
+    <section id="contact">
+      <div className="h-[40rem] sm:h-[40rem] w-full flex flex-col sm:flex-row sm:space-x-40 sm:space-y-0 space-y-6 px-5 items-center justify-center">
+        <div className="col-span-0 overflow-hidden">
+          <div>
+            <div
+              style={{ fontFamily: 'WeirdComicItalic, sans-serif' }}
+              className="sm:text-5xl flex justify-center text-center sm:text-left sm:justify-start text-4xl text-[#FFF6E1]"
+            >
+              Stay<br />
+              Connected
+              <Image
                 src="/Hero/Plane.svg"
                 alt="hcd logo"
-                
                 width={150}
                 height={100}
                 style={{ objectFit: 'contain' }}
               />
-    </div>
-    Department of Human Centered Design,<br />
-Indraprastha Institute of Information Technology Delhi (IIIT-Delhi) ,<br />
-New Delhi, Delhi 110020
+            </div>
 
-</div>
-<div className="flex flex-row  space-x-4 py-5">          <JoinCommunity/> <ContactUs />
-</div></div>
+            {/* Address */}
+            <div className="flex flex-row space-x-2">
+              <IconMapPin stroke={2} />
+              <Link href="https://goo.gl/maps/xyz123" passHref>
+                <span>
+                Research and development (R&D) Block,<br />
+                  Indraprastha Institute of Information Technology Delhi (IIIT-Delhi),<br />
+                  New Delhi, Delhi 110020
+                </span>
+              </Link>
+            </div>
 
-    <div className=" col-span-1 rounded-2xl overflow-hidden  border-4 border-[#FFF6E1] sm:block hidden">
-  <iframe
-    
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.827615231125!2d77.26982302618208!3d28.544900738053585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3e45d85d3e3%3A0x691393414902968e!2sIIIT-Delhi%20R%26D%20Building!5e0!3m2!1sen!2sin!4v1726605696874!5m2!1sen!2sin"
-    width="400"
-    height="300"
-    
-    allowFullScreen
-    loading="lazy"
-    referrerPolicy="no-referrer-when-downgrade"
-  />
-</div>
-<div className=" col-span-1 rounded-2xl overflow-hidden  border-4 border-[#FFF6E1] sm:hidden block">
-  <iframe
-    
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.827615231125!2d77.26982302618208!3d28.544900738053585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3e45d85d3e3%3A0x691393414902968e!2sIIIT-Delhi%20R%26D%20Building!5e0!3m2!1sen!2sin!4v1726605696874!5m2!1sen!2sin"
-    width="250"
-    height="250"
-    
-    allowFullScreen
-    loading="lazy"
-    referrerPolicy="no-referrer-when-downgrade"
-  />
-</div>
-    </div>
-  </section>
-  )
-}
+            {/* Email */}
+            <div className="flex flex-row space-x-2">
+              <IconMail stroke={2} />
+              <Link href="mailto:1pxdesignconf@iiitd.ac.in" passHref>
+                <span>1pxdesignconf@iiitd.ac.in</span>
+              </Link>
+            </div>
+
+            {/* Phone */}
+            <div className="flex flex-row space-x-2">
+              <IconPhone stroke={2} />
+              <span>
+                +91 9911483249 Adya Aggarwal<br />
+                +91 88002 40074 Prashi Jain
+              </span>
+            </div>
+
+            {/* Social Media */}
+            <div className="flex flex-row space-x-2">
+              <IconBrandInstagram stroke={2} />
+              <Link href="https://www.instagram.com/1px.descon/?hl=en" passHref>
+                <span>@1px.descon</span>
+              </Link>
+            </div>
+            <div className="flex flex-row space-x-2">
+              <IconBrandX stroke={2} />
+              <Link href="https://x.com/hcdiiitd?lang=en" passHref>
+                <span>@hcdiiitd</span>
+              </Link>
+            </div>
+            <div className="flex flex-row space-x-2">
+              <IconBrandLinkedin stroke={2} />
+              <Link href="https://in.linkedin.com/company/hcdiiitd" passHref>
+                <span>@hcdiiitd</span>
+              </Link>
+            </div>
+          </div>
+
+          <div className="flex flex-row space-x-4 py-5">
+            <JoinCommunity />
+          </div>
+        </div>
+
+        {/* Map */}
+        <div className="col-span-1 rounded-2xl overflow-hidden border-4 border-[#FFF6E1] sm:block hidden">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.827615231125!2d77.26982302618208!3d28.544900738053585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3e45d85d3e3%3A0x691393414902968e!2sIIIT-Delhi%20R%26D%20Building!5e0!3m2!1sen!2sin!4v1726605696874!5m2!1sen!2sin"
+            width="400"
+            height="300"
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+        </div>
+        <div className="col-span-1 rounded-2xl overflow-hidden border-4 border-[#FFF6E1] sm:hidden block">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.827615231125!2d77.26982302618208!3d28.544900738053585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3e45d85d3e3%3A0x691393414902968e!2sIIIT-Delhi%20R%26D%20Building!5e0!3m2!1sen!2sin!4v1726605696874!5m2!1sen!2sin"
+            width="250"
+            height="250"
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+        </div>
+      </div>
+    </section>
+  );
+};
 
 const About = () => {
   return (<>
@@ -787,10 +836,8 @@ const images2 = [
 
 const images = [
   "/images/20.png",
-  "/images/21.png",
   "/images/22.png",
   "/images/23.png",
-  "/images/24.png",
   "/images/25.png",
   "/images/1.png",
   "/images/2.png",

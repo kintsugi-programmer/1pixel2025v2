@@ -28,9 +28,9 @@ export function Dock() {
     },
     {
 
-      title: "Twitter",
+      title: "X",
       icon: (
-        <IconBrandTwitter className="h-full w-full text-[#FFF6E1]" />
+        <IconBrandX className="h-full w-full text-[#FFF6E1]" />
       ),
       href: "https://x.com/hcdiiitd?lang=en",
     },
