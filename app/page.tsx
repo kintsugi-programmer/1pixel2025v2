@@ -18,6 +18,7 @@ import { PinContainer } from "@/components/ui/3d-pin";
 import { IconPhone } from '@tabler/icons-react';
 import { IconMapPin } from '@tabler/icons-react';
 import { IconBrandX } from '@tabler/icons-react';
+import { IconBrandWhatsapp } from '@tabler/icons-react';
 import { IconBrandInstagram } from '@tabler/icons-react';
 import { IconBrandLinkedin } from '@tabler/icons-react';
 export default function Home() {
@@ -402,7 +403,7 @@ const Events = () => {
 const Contact = () => {
   return (
     <section id="contact">
-      <div className="h-[40rem] sm:h-[40rem] w-full flex flex-col sm:flex-row sm:space-x-40 sm:space-y-0 space-y-6 px-5 items-center justify-center">
+      <div className="h-[40rem] sm:h-[40rem] w-full flex flex-col sm:flex-row sm:space-x-20 sm:space-y-0 space-y-6 px-5 items-center justify-center">
         <div className="col-span-0 overflow-hidden">
           <div>
             <div
@@ -444,8 +445,8 @@ const Contact = () => {
             <div className="flex flex-row space-x-2">
               <IconPhone stroke={2} />
               <span>
-                +91 9911483249 Adya Aggarwal<br />
-                +91 88002 40074 Prashi Jain
+              Adya Aggarwal:  +91 9911483249<br />
+              Prashi Jain:  +91 88002 40074
               </span>
             </div>
 
@@ -456,23 +457,23 @@ const Contact = () => {
                 <span>@1px.descon</span>
               </Link>
             </div>
-            <div className="flex flex-row space-x-2">
+            {/* <div className="flex flex-row space-x-2">
               <IconBrandX stroke={2} />
               <Link href="https://x.com/hcdiiitd?lang=en" passHref>
                 <span>@hcdiiitd</span>
               </Link>
-            </div>
+            </div>*/}
             <div className="flex flex-row space-x-2">
-              <IconBrandLinkedin stroke={2} />
-              <Link href="https://in.linkedin.com/company/hcdiiitd" passHref>
-                <span>@hcdiiitd</span>
+              <IconBrandWhatsapp stroke={2} />
+              <Link href="https://chat.whatsapp.com/ISykFouJbWzLFfAnz5PHrv" passHref>
+                <span>1Px DesCon Community</span>
               </Link>
-            </div>
+            </div> 
           </div>
-
-          <div className="flex flex-row space-x-4 py-5">
+{/* 
+          <div className="flex flex-row space-x-2 py-5">
             <JoinCommunity />
-          </div>
+          </div> */}
         </div>
 
         {/* Map */}
