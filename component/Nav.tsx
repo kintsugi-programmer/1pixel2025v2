@@ -37,6 +37,12 @@ const Nav = () => {
         <Link href="#memories">
           <span className="cursor-pointer hover:text-[#d1d1d1] transition-colors">Past Memories</span>
         </Link>
+        <Link href="#Tickets">
+          <span className="cursor-pointer hover:text-[#d1d1d1] transition-colors">Get Tickets</span>
+        </Link>
+        <Link href="#FAQs">
+          <span className="cursor-pointer hover:text-[#d1d1d1] transition-colors">FAQs</span>
+        </Link>
         <Link href="#contact">
           <span className="cursor-pointer hover:text-[#d1d1d1] transition-colors">Contact Us</span>
         </Link>

@@ -21,6 +21,13 @@ import { IconBrandX } from '@tabler/icons-react';
 import { IconBrandWhatsapp } from '@tabler/icons-react';
 import { IconBrandInstagram } from '@tabler/icons-react';
 import { IconBrandLinkedin } from '@tabler/icons-react';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
+
 export default function Home() {
   return (<div className="" data-cursor-color="#FBD75E">
     <Cursor isGelly={true} />
@@ -31,8 +38,9 @@ export default function Home() {
   <Events />
   <Sponsors />
   <Tickets />
-  
+  <FAQs/>
   <Memories/>
+
   <Contact />
 
   <Footer />
@@ -40,6 +48,59 @@ export default function Home() {
    
   );
 }
+
+
+const FAQs = () => {
+  return (
+    <div className="h-[40rem] sm:h-[40rem] w-full sm:px-[10rem] px-5 flex flex-col sm:flex-row sm:space-x-20 sm:space-y-0 space-y-6 items-center justify-center text-[#FFF6E1]">
+       <div data-cursor-magnetic style={{ fontFamily: 'WeirdComicItalic, sans-serif' }} 
+         className=" sm:text-7xl flex justify-center text-center text-4xl text-[#FFF6E1]">
+      FAQs
+    </div>
+      <Accordion type="single" collapsible className="w-full">
+        <AccordionItem value="item-1">
+          <AccordionTrigger>What does the ticket cost include?</AccordionTrigger>
+          <AccordionContent>
+            The ticket price covers access to both days of the conference (4th and 5th January), exclusive conference merchandise, meals, and entry to all speaker sessions and workshops.
+            <br />
+            <br />
+            <strong>Note:</strong> The ticket does not include accommodation. However, we will soon share a list of nearby affordable accommodations on our website and social media platforms for those seeking options.
+          </AccordionContent>
+        </AccordionItem>
+        <AccordionItem value="item-2">
+          <AccordionTrigger>Who can attend the conference?</AccordionTrigger>
+          <AccordionContent>
+            The conference is open to anyone with an interest in design. Whether you're a student, professional, or enthusiast, this event offers a unique opportunity to learn from talented designers across the industry and academia while expanding your professional network.
+          </AccordionContent>
+        </AccordionItem>
+        <AccordionItem value="item-3">
+          <AccordionTrigger>I’ve purchased my ticket. When will I receive confirmation?</AccordionTrigger>
+          <AccordionContent>
+            Ticket confirmations will be sent out a few days before the conference to the email address you registered with. Additional details will also be shared via email. Physical ID cards for entry will be provided on the day of the conference.
+          </AccordionContent>
+        </AccordionItem>
+        <AccordionItem value="item-4">
+          <AccordionTrigger>What topics will be covered during the conference?</AccordionTrigger>
+          <AccordionContent>
+            The conference will feature talks on a wide range of design topics, including:
+            <div className="pl-5">
+            <ul  className="list-disc list-inside text-[#FFF6E1]">
+              <li>UI/UX design</li>
+              <li>Graphic design</li>
+              <li>3D modelling</li>
+              <li>Furniture design</li>
+              <li>And much more!</li>
+            </ul>
+            </div>
+            Additionally, exciting workshops will be held to provide hands-on learning experiences.
+          </AccordionContent>
+        </AccordionItem>
+      </Accordion>
+    </div>
+  );
+};
+
+
 const Tickets = () => {
   return (
     <section id="tickets" data-cursor-size="100px">
