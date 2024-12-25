@@ -487,7 +487,7 @@ const Contact = () => {
               <IconMapPin stroke={2} />
               <Link href="https://goo.gl/maps/xyz123" passHref>
                 <span>
-                Research and development (R&D) Block,<br />
+                Lecture Hall Complex (LHC) Block,<br />
                   Indraprastha Institute of Information Technology Delhi (IIIT-Delhi),<br />
                   New Delhi, Delhi 110020
                 </span>
@@ -512,18 +512,19 @@ const Contact = () => {
             </div>
 
             {/* Social Media */}
+
+            <div className="flex flex-row space-x-2">
+              <IconBrandLinkedin stroke={2} />
+              <Link href="https://www.linkedin.com/company/1pixel-designconf/" passHref>
+                <span>@1pixel-designconf</span>
+              </Link>
+            </div>
             <div className="flex flex-row space-x-2">
               <IconBrandInstagram stroke={2} />
               <Link href="https://www.instagram.com/1px.descon/?hl=en" passHref>
                 <span>@1px.descon</span>
               </Link>
             </div>
-            {/* <div className="flex flex-row space-x-2">
-              <IconBrandX stroke={2} />
-              <Link href="https://x.com/hcdiiitd?lang=en" passHref>
-                <span>@hcdiiitd</span>
-              </Link>
-            </div>*/}
             <div className="flex flex-row space-x-2">
               <IconBrandWhatsapp stroke={2} />
               <Link href="https://chat.whatsapp.com/ISykFouJbWzLFfAnz5PHrv" passHref>

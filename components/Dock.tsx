@@ -24,7 +24,7 @@ export function Dock() {
       icon: (
         <IconBrandLinkedin className="h-full w-full text-[#FFF6E1]" />
       ),
-      href: "https://in.linkedin.com/company/hcdiiitd",
+      href: "https://www.linkedin.com/company/1pixel-designconf/",
     },
     {
 

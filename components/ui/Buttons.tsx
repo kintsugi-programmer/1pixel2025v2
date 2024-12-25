@@ -76,7 +76,7 @@ export const Spons = () => {
 
 export const GetTicketsButton = () => {
   return (
-    <Link href="https://forms.gle/HV8Zn76BbrCXvYwa9">
+    <Link href=" https://forms.gle/TwhBvZASkkjsuGVN6">
       <StyledWrapper2>
         <button className="learn-more">
           Get Tickets
