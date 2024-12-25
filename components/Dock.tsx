@@ -59,7 +59,7 @@ export function Dock() {
       icon: (
         <IconBrandYoutube className="h-full w-full text-[#FFF6E1]" />
       ),
-      href: "https://www.youtube.com/channel/UCKnRN-9ht_uca8nIdhyTAtQ/videos",
+      href: "https://www.youtube.com/@1PixelDesignConference",
     },
   ];
   return (

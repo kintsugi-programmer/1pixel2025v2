@@ -16,7 +16,7 @@ export const ContactUs = () => {
 
 export const Archive = () => {
   return (
-    <Link href="/">
+    <Link href="https://1pxdesignconf2024.vercel.app/">
       <StyledWrapper2>
         <button className="learn-more">
           Archive

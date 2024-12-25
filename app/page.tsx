@@ -27,6 +27,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
+import HeroVideoDialog from "@/components/ui/hero-video-dialog";
 
 export default function Home() {
   return (<div className="" data-cursor-color="#FBD75E">
@@ -345,7 +346,7 @@ const Past = () => {
     </div>
     <div>
     <Image
-                src="/Past/Past.svg"
+                src="/Past/Past.png"
                 alt="hcd logo"
                 className="px-0"
                 width={5000}
@@ -396,7 +397,7 @@ const Events = () => {
     </div>
     <div className="sm:px-60 px-10 text-center text-black font-bold">The panel discussion on India's Design Transition: Uniting Vision with Execution, featuring Don Norman, Saptarshi Prakash, and Manohar Swaminathan on December 21, 2025, captivated over 200 attendees with profound insights into harmonizing innovative ideas with actionable strategies.</div>
     <div>
-    <div className="flex flex-col text-black items-center sm:items-start sm:flex-row justify-between  pt-10 pb-[10rem] sm:px-[15rem] px-2 gap-y-5 sm:gap-x-[5rem]">
+    <div className="flex flex-col text-black items-center sm:items-start sm:flex-row justify-between  pt-10 pb-[1rem] sm:px-[15rem] px-2 gap-y-5 sm:gap-x-[5rem]">
   {/* Left-aligned paragraph */}
   <div className=" w-1/2 text-justify">
   <div className="group">
@@ -449,13 +450,25 @@ const Events = () => {
     <p className="sm:pr-[3rem]">
     Manohar Swaminathan is a Senior Principal Researcher at Microsoft Research India, focusing on virtual and augmented reality technologies for empowering visually impaired individuals. He also explores IoT and cloud solutions for large-scale impact in emerging markets.    </p>
     <Link href="https://www.microsoft.com/en-us/research/people/swmanohmicrosoft-com/" className="">
-  <button className="px-4 py-2  rounded-md border border-black bg-white text-black text-sm hover:shadow-[4px_4px_0px_0px_rgba(0,0,0)] transition duration-200">
+  <button className="px-4 p-2  rounded-md border border-black bg-white text-black text-sm hover:shadow-[4px_4px_0px_0px_rgba(0,0,0)] transition duration-200">
   Learn More
 </button></Link> </div>
   
 </div>
+
     </div>
-  
+    <div className="w-full max-w-2xl mx-auto">
+  <HeroVideoDialog
+    className="py-5"
+    animationStyle="top-in-bottom-out"
+    videoSrc="https://www.youtube.com/embed/wlnYnhDNsqg?si=7-5qkaJ7deDA_NMp"
+    thumbnailSrc="/Events/thumb1.svg"
+    thumbnailAlt="Panel Discussion with Don Norman | 1Pixel Design Conference'25"
+  />
+</div>
+
+    {/* <iframe width="500" height="281" src="https://www.youtube.com/embed/11zYdMHxLr8?si=pusnj3J9SQLX8cTu" title="YouTube video player"></iframe> */}
+
 
   </div>
   </section>
@@ -463,7 +476,7 @@ const Events = () => {
 }
 const Contact = () => {
   return (
-    <section id="contact">
+    <section id="contact" data-cursor-color="#E08ABA">
       <div className="h-[40rem] sm:h-[40rem] w-full flex flex-col sm:flex-row sm:space-x-20 sm:space-y-0 space-y-6 px-5 items-center justify-center">
         <div className="col-span-0 overflow-hidden">
           <div>
@@ -890,11 +903,7 @@ const images2 = [
   "/FilterImages/3.png",
   "/FilterImages/4.png",
   "/FilterImages/5.png",
-  "/FilterImages/6.png",
-  "/FilterImages/7.png",
-  "/FilterImages/8.png",
-  "/FilterImages/9.png",
-  "/FilterImages/10.png",
+
 ]
 
 const images = [
