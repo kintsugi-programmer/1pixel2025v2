@@ -325,19 +325,18 @@ const Past = () => {
       Editions
     </div>
     <div className="flex flex-col items-center sm:items-start justify-between  pt-10 gap-y-5 ">
-  {/* Left-aligned paragraph */}
-  <div className=" w-2/2 text-justify px-5 sm:px-0" data-cursor-magnetic>
+  {/* <div className=" w-2/2 text-justify px-5 sm:px-0" data-cursor-magnetic>
     <p>
       1Pixel offers a unique opportunity to gain insights into the evolving world of design. With a focus on empowering attendees to stay at the forefront of innovation, the 1Pixel Design Conference is a pivotal event for those passionate about shaping the future of design.
     </p>
   </div>
 
-  {/* Right-aligned paragraph */}
+
   <div className="w-2/2 text-justify px-5 sm:px-0" data-cursor-magnetic>
     <p>
       This immersive experience brings together a wealth of knowledge from speakers with extensive and varied expertise, fostering an environment where future design leaders can learn, grow, and establish valuable connections.
     </p>
-  </div>
+  </div> */}
   <div className="flex justify-center pb-10"><Archive/></div>
 
   
@@ -388,7 +387,7 @@ const Events = () => {
     />
     <div  style={{ fontFamily: 'WeirdComic, sans-serif' }} 
          className="sm:text-5xl flex justify-center text-center  text-4xl text-[#FFF6E1]">
-      India's Design Transistion: Uniting <br />Vision With Execution
+      India's Design Transition: Uniting <br />Vision With Execution
     </div>
     <div className="text-black sm:text-3xl text-xl pt-1 text-center" style={{ fontFamily: 'LongWeekend, sans-serif' }}>
 21st DECEMBER, 2024<br />
