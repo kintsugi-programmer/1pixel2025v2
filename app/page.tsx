@@ -34,6 +34,9 @@ export default function Home() {
     <Cursor isGelly={true} />
  
   <Hero />
+  <Speakers/>
+  <Merchandise/>
+  <Workshops/>
   <About />
   <Past />
   <Events />
@@ -100,6 +103,36 @@ const FAQs = () => {
     </div>
   );
 };
+
+
+const Workshops = () => {
+  return (
+    <div className="h-[40rem] sm:h-[40rem] w-full sm:px-[5rem] sm:py-[5rem] p-10 flex flex-col sm:flex-row sm:space-x-20 sm:space-y-0 space-y-6 items-center justify-center text-[#FFF6E1]">
+     <div className="h-full max-w-screen-lg w-full border-4 border-[#FFF6E1] p-10 rounded-3xl">
+     <div className="flex justify-center sm:space-x-5 space-y-2 sm:space-y-0 space-x-0 sm:flex-row flex-col">
+    {/* <div data-cursor-magnetic className="text-black sm:text-3xl text-xl pt-10 text-center" style={{ fontFamily: 'LongWeekend, sans-serif' }}>
+the 1pixel design Conference serves as the platform for showcasing and <br />
+exploring the latest industry trends.
+    </div> */}
+    <div className="text-[#FFF6E1] sm:text-6xl text-xl flex-2  justify-center text-left" style={{ fontFamily: 'LongWeekend, sans-serif' }}>
+    exciting <br />tshirts, tote <br />bags, and much <br />
+     much more!
+    </div>
+  <div className="group">
+  <Image
+                src="/workshops/adobe.svg"
+                alt="hcd logo"
+                className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
+                width={320}
+                height={100}
+                style={{ objectFit: 'contain' }}
+              /></div>
+              </div>
+    
+    </div></div>  
+  );
+};
+
 
 
 const Tickets = () => {
@@ -325,18 +358,18 @@ const Past = () => {
       Editions
     </div>
     <div className="flex flex-col items-center sm:items-start justify-between  pt-10 gap-y-5 ">
-  {/* <div className=" w-2/2 text-justify px-5 sm:px-0" data-cursor-magnetic>
+  <div className=" w-2/2 text-justify px-5 sm:px-0" data-cursor-magnetic>
     <p>
-      1Pixel offers a unique opportunity to gain insights into the evolving world of design. With a focus on empowering attendees to stay at the forefront of innovation, the 1Pixel Design Conference is a pivotal event for those passionate about shaping the future of design.
-    </p>
+    1Pixel Design Conference has consistently brought together visionary speakers and enthusiastic participants, inspiring a deeper connection to design through engaging sessions and innovative ideas."
+
+   </p>
   </div>
 
 
   <div className="w-2/2 text-justify px-5 sm:px-0" data-cursor-magnetic>
     <p>
-      This immersive experience brings together a wealth of knowledge from speakers with extensive and varied expertise, fostering an environment where future design leaders can learn, grow, and establish valuable connections.
-    </p>
-  </div> */}
+    Each edition celebrates the evolving role of design, leaving a lasting impact on the creative community.     </p>
+  </div>
   <div className="flex justify-center pb-10"><Archive/></div>
 
   
@@ -497,7 +530,7 @@ const Contact = () => {
             {/* Address */}
             <div className="flex flex-row space-x-2">
               <IconMapPin stroke={2} />
-              <Link href="https://goo.gl/maps/xyz123" passHref>
+              <Link href="https://maps.app.goo.gl/jX6W3WUustxEuSbC9" passHref>
                 <span>
                 Lecture Hall Complex (LHC) Block,<br />
                   Indraprastha Institute of Information Technology Delhi (IIIT-Delhi),<br />
@@ -551,30 +584,163 @@ const Contact = () => {
         </div>
 
         {/* Map */}
-        <div className="col-span-1 rounded-2xl overflow-hidden border-4 border-[#FFF6E1] sm:block hidden">
+        <Link href="https://maps.app.goo.gl/jX6W3WUustxEuSbC9" passHref>
+        <div className="col-span-1 rounded-2xl overflow-hidden border-4 z-60 border-[#FFF6E1] sm:block hidden">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.827615231125!2d77.26982302618208!3d28.544900738053585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3e45d85d3e3%3A0x691393414902968e!2sIIIT-Delhi%20R%26D%20Building!5e0!3m2!1sen!2sin!4v1726605696874!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112156.0006195901!2d77.11076777458214!3d28.54347609363633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce305dd3dea97%3A0x8a5a5b4ec139311c!2sLecture%20Hall%20Complex%20(LHC)%2C%20IIITD!5e0!3m2!1sen!2sin!4v1735258580367!5m2!1sen!2sin"
             width="400"
             height="300"
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-          />
-        </div>
-        <div className="col-span-1 rounded-2xl overflow-hidden border-4 border-[#FFF6E1] sm:hidden block">
+            style={{
+              pointerEvents: 'auto',
+              border: 'none',
+              
+            }}
+          ></iframe>
+        </div></Link>
+        <Link href="https://maps.app.goo.gl/jX6W3WUustxEuSbC9" passHref>
+        <div className="col-span-1 rounded-2xl overflow-hidden border-4 z-60 border-[#FFF6E1] sm:hidden block">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.827615231125!2d77.26982302618208!3d28.544900738053585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3e45d85d3e3%3A0x691393414902968e!2sIIIT-Delhi%20R%26D%20Building!5e0!3m2!1sen!2sin!4v1726605696874!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112156.0006195901!2d77.11076777458214!3d28.54347609363633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce305dd3dea97%3A0x8a5a5b4ec139311c!2sLecture%20Hall%20Complex%20(LHC)%2C%20IIITD!5e0!3m2!1sen!2sin!4v1735258580367!5m2!1sen!2sin"
             width="250"
             height="250"
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-          />
-        </div>
+            style={{
+              pointerEvents: 'auto',
+              border: 'none',
+              
+            }}
+          ></iframe>
+        </div></Link>
       </div>
     </section>
   );
 };
+
+
+const Speakers = () => {
+  return (<>
+    <section id="speakers"  
+ >
+  <div  className='h-auto  w-full rounded-3xl flex bg-[#FEDB59] flex-col items-center justify-start pt-1 mx-auto h-auto w-full rounded-3xl flex bg-[#458F64]  justify-start pt-1 mx-auto'
+  style={{
+    backgroundImage: "url('/FilterImages/Strokes texture 2.png')",
+    backgroundSize: 'cover',
+    backgroundPosition: 'center center',
+    backgroundRepeat: 'no-repeat',
+    backgroundAttachment: 'fixed',
+  }}>
+    <div data-cursor-magnetic style={{ fontFamily: 'WeirdComicItalic, sans-serif' }} 
+         className="pt-40 pb-5 sm:text-7xl text-4xl text-black">
+      Our Speakers
+    </div>
+    <div className="flex justify-center sm:space-x-5 space-y-2 sm:space-y-0 space-x-0 sm:flex-row flex-col">
+    {/* <div data-cursor-magnetic className="text-black sm:text-3xl text-xl pt-10 text-center" style={{ fontFamily: 'LongWeekend, sans-serif' }}>
+the 1pixel design Conference serves as the platform for showcasing and <br />
+exploring the latest industry trends.
+    </div> */}
+  <div className="group">
+  <Image
+                src="/speakers/1.svg"
+                alt="hcd logo"
+                className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
+                width={200}
+                height={100}
+                style={{ objectFit: 'contain' }}
+              /></div>
+  <div className="group">
+<Image
+  src="/speakers/2.svg"
+  alt="hcd logo"
+  className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
+  width={200}
+  height={100}
+  style={{ objectFit: 'contain' }}
+/></div>
+<div className="group">
+<Image
+  src="/speakers/3.svg"
+  alt="hcd logo"
+  className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
+  width={200}
+  height={100}
+  style={{ objectFit: 'contain' }}
+/></div>
+<div className="group">
+<Image
+  src="/speakers/4.svg"
+  alt="hcd logo"
+  className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
+  width={200}
+  height={100}
+  style={{ objectFit: 'contain' }}
+/></div>
+<div className="group">
+<Image
+  src="/speakers/5.svg"
+  alt="hcd logo"
+  className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
+  width={200}
+  height={100}
+  style={{ objectFit: 'contain' }}
+/></div>
+</div>
+<div className="flex justify-center sm:space-x-5 space-y-2 sm:space-y-0 space-x-0 sm:flex-row flex-col">
+    {/* <div data-cursor-magnetic className="text-black sm:text-3xl text-xl pt-10 text-center" style={{ fontFamily: 'LongWeekend, sans-serif' }}>
+the 1pixel design Conference serves as the platform for showcasing and <br />
+exploring the latest industry trends.
+    </div> */}
+  <div className="group">
+  <Image
+                src="/speakers/6.svg"
+                alt="hcd logo"
+                className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
+                width={200}
+                height={100}
+                style={{ objectFit: 'contain' }}
+              /></div>
+  <div className="group">
+<Image
+  src="/speakers/7.svg"
+  alt="hcd logo"
+  className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
+  width={200}
+  height={100}
+  style={{ objectFit: 'contain' }}
+/></div>
+<div className="group">
+<Image
+  src="/speakers/8.svg"
+  alt="hcd logo"
+  className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
+  width={200}
+  height={100}
+  style={{ objectFit: 'contain' }}
+/></div>
+
+
+<div className="group">
+<Image
+  src="/speakers/9.svg"
+  alt="hcd logo"
+  className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
+  width={200}
+  height={100}
+  style={{ objectFit: 'contain' }}
+/></div>
+
+
+</div>
+
+  </div>
+</section></>)};
+
+
+
 
 const About = () => {
   return (<>
@@ -644,6 +810,49 @@ exploring the latest industry trends.
 
   </div>
 </section></>)};
+
+
+const Merchandise = () => {
+  return (<>
+   <VelocityScroll
+      text="Merch Merch Merch Merch "
+      default_velocity={3}
+      className=" text-center text-4xl   dark:text-white md:text-7xl md:leading-[5rem]"
+    />
+    <section id="merchandise"  
+ >
+  <div  className='h-auto  w-full rounded-3xl flex bg-[#4F3B7E] flex-col items-center justify-start pt-1 mx-auto h-auto w-full rounded-3xl flex bg-[#458F64]  justify-start pt-1 mx-auto'
+  style={{
+    backgroundImage: "url('/FilterImages/Strokes texture 2.png')",
+    backgroundSize: 'cover',
+    backgroundPosition: 'center center',
+    backgroundRepeat: 'no-repeat',
+    backgroundAttachment: 'fixed',
+  }}>
+     <div className="flex justify-center sm:space-x-5 space-y-2 sm:space-y-0 space-x-0 sm:flex-row flex-col">
+    {/* <div data-cursor-magnetic className="text-black sm:text-3xl text-xl pt-10 text-center" style={{ fontFamily: 'LongWeekend, sans-serif' }}>
+the 1pixel design Conference serves as the platform for showcasing and <br />
+exploring the latest industry trends.
+    </div> */}
+    <div className="text-[#FFF6E1] sm:text-6xl text-xl flex-2 py-20 justify-center text-left" style={{ fontFamily: 'LongWeekend, sans-serif' }}>
+    exciting <br />tshirts, tote <br />bags, and much <br />
+     much more!
+    </div>
+  <div className="group">
+  <Image
+                src="/merch/merch.svg"
+                alt="hcd logo"
+                className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
+                width={700}
+                height={100}
+                style={{ objectFit: 'contain' }}
+              /></div>
+              </div>
+    </div>
+</section></>)};
+
+
+
 const Memories = () => {
     return (<>
     <section id="memories" data-cursor-color="#FFF6E1"> 
@@ -673,6 +882,8 @@ exploring the latest industry trends.
 <ParallaxScroll images={images}  />
   </div>
 </section></>)};
+
+
 
 const Hero = () => {
   return (<>
