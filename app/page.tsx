@@ -1,5 +1,10 @@
 'use client'
-
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip"
 
 import { ParallaxScroll } from "@/components/ParallexScroll";
 import WordPullUp from "@/components/ui/word-pull-up";
@@ -118,7 +123,7 @@ const FAQs = () => {
 const Workshops = () => {
   return (
     <section id="workshops" >
-    <div className="h-[55rem] sm:h-[40rem] w-full sm:px-[5rem] sm:py-[5rem] p-10 flex flex-col sm:flex-row sm:space-x-20 sm:space-y-0 space-y-6 items-center justify-center text-[#FFF6E1]">
+    <div data-cursor-size="50px" data-cursor-color="#E08ABA"  className="h-[55rem] sm:h-[40rem] w-full sm:px-[5rem] sm:py-[5rem] p-10 flex flex-col sm:flex-row sm:space-x-20 sm:space-y-0 space-y-6 items-center justify-center text-[#FFF6E1]">
      <div className="h-full max-w-screen-lg w-full border-4 border-[#FFF6E1] p-10 rounded-3xl">
      <div className="flex justify-center sm:space-x-5 space-y-2 sm:space-y-0 space-x-0 sm:flex-row flex-col">
     {/* <div data-cursor-magnetic className="text-black sm:text-3xl text-xl pt-10 text-center" style={{ fontFamily: 'LongWeekend, sans-serif' }}>
@@ -365,7 +370,7 @@ const Past = () => {
   return (
     <section id="past"  >
     <div
-    className="w-full h-auto sm:pl-[10rem] flex flex-col items-center sm:items-start sm:flex-row"
+    className="w-full h-auto sm:pl-[10rem] flex flex-col items-center sm:items-start sm:flex-row" data-cursor-size="50px" data-cursor-color="#E08ABA" 
     ><div >
           <div data-cursor-magnetic style={{ fontFamily: 'WeirdComicItalic, sans-serif' }} 
          className="pt-40 sm:text-7xl flex justify-center text-center sm:text-left sm:justify-start text-4xl text-[#FFF6E1]">
@@ -636,123 +641,227 @@ const Contact = () => {
   );
 };
 
-
 const Speakers = () => {
-  return (<>
-    <section id="speakers"  
- >
-  <div  className='h-auto  w-full rounded-3xl flex bg-[#FEDB59] flex-col items-center justify-start pt-1 mx-auto h-auto w-full rounded-3xl flex bg-[#458F64]  justify-start pt-1 mx-auto'
-  style={{
-    backgroundImage: "url('/FilterImages/Strokes texture 2.png')",
-    backgroundSize: 'cover',
-    backgroundPosition: 'center center',
-    backgroundRepeat: 'no-repeat',
-    backgroundAttachment: 'fixed',
-  }}>
-    <div data-cursor-magnetic style={{ fontFamily: 'WeirdComicItalic, sans-serif' }} 
-         className="pt-40 pb-5 sm:text-7xl text-4xl text-black">
-      Our Speakers
-    </div>
-    <div className="flex justify-center sm:space-x-5 space-y-2 sm:space-y-0 space-x-0 sm:flex-row flex-col">
-    {/* <div data-cursor-magnetic className="text-black sm:text-3xl text-xl pt-10 text-center" style={{ fontFamily: 'LongWeekend, sans-serif' }}>
-the 1pixel design Conference serves as the platform for showcasing and <br />
-exploring the latest industry trends.
-    </div> */}
-  <div className="group">
-  <Image
-                src="/speakers/1.svg"
-                alt="hcd logo"
-                className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
-                width={200}
-                height={100}
-                style={{ objectFit: 'contain' }}
-              /></div>
-  <div className="group">
-<Image
-  src="/speakers/2.svg"
-  alt="hcd logo"
-  className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
-  width={200}
-  height={100}
-  style={{ objectFit: 'contain' }}
-/></div>
-<div className="group">
-<Image
-  src="/speakers/3.svg"
-  alt="hcd logo"
-  className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
-  width={200}
-  height={100}
-  style={{ objectFit: 'contain' }}
-/></div>
-<div className="group">
-<Image
-  src="/speakers/4.svg"
-  alt="hcd logo"
-  className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
-  width={200}
-  height={100}
-  style={{ objectFit: 'contain' }}
-/></div>
-<div className="group">
-<Image
-  src="/speakers/5.svg"
-  alt="hcd logo"
-  className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
-  width={200}
-  height={100}
-  style={{ objectFit: 'contain' }}
-/></div>
-</div>
-<div className="flex justify-center sm:space-x-5 space-y-2 sm:space-y-0 space-x-0 sm:flex-row flex-col">
-    {/* <div data-cursor-magnetic className="text-black sm:text-3xl text-xl pt-10 text-center" style={{ fontFamily: 'LongWeekend, sans-serif' }}>
-the 1pixel design Conference serves as the platform for showcasing and <br />
-exploring the latest industry trends.
-    </div> */}
-  <div className="group">
-  <Image
-                src="/speakers/6.svg"
-                alt="hcd logo"
-                className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
-                width={200}
-                height={100}
-                style={{ objectFit: 'contain' }}
-              /></div>
-  <div className="group">
-<Image
-  src="/speakers/7.svg"
-  alt="hcd logo"
-  className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
-  width={200}
-  height={100}
-  style={{ objectFit: 'contain' }}
-/></div>
-<div className="group">
-<Image
-  src="/speakers/8.svg"
-  alt="hcd logo"
-  className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
-  width={200}
-  height={100}
-  style={{ objectFit: 'contain' }}
-/></div>
+  return (
+    <>
+      <section id="speakers" >
+        <div
+          className="h-auto w-full rounded-3xl flex bg-[#FEDB59] flex-col items-center justify-start pt-1 mx-auto"
+          style={{
+            backgroundImage: "url('/FilterImages/Strokes texture 2.png')",
+            backgroundSize: 'cover',
+            backgroundPosition: 'center center',
+            backgroundRepeat: 'no-repeat',
+            backgroundAttachment: 'fixed',
+          }}
+          data-cursor-size="50px" data-cursor-color="#E08ABA" 
+        >
+          <div
+            data-cursor-magnetic
+            style={{ fontFamily: 'WeirdComicItalic, sans-serif' }}
+            className="pt-40 pb-5 sm:text-7xl text-4xl text-black"
+          >
+            Our Speakers
+          </div>
 
+          <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 px-5 py-5 ">
+            {/* Speaker 1 */}
+            <TooltipProvider>
+              <Tooltip>
+                <TooltipTrigger>
+                  <div className="group">
+                    <Image
+                      src="/speakers/1.svg"
+                      alt="Speaker 1"
+                      className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
+                      width={200}
+                      height={100}
+                      style={{ objectFit: 'contain' }}
+                    />
+                  </div>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>
+                    Saptarshi is a highly<br /> influential figure in the<br /> fields of design,<br /> startups & content<br /> creation. He has the<br /> ability to explain<br /> complex concepts in<br /> a way that is easily<br /> understandable to<br /> everyone.
+                  </p>
+                </TooltipContent>
+              </Tooltip>
 
-<div className="group">
-<Image
-  src="/speakers/9.svg"
-  alt="hcd logo"
-  className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
-  width={200}
-  height={100}
-  style={{ objectFit: 'contain' }}
-/></div>
+              {/* Speaker 2 */}
+              <Tooltip>
+                <TooltipTrigger>
+                  <div className="group">
+                    <Image
+                      src="/speakers/2.svg"
+                      alt="Speaker 2"
+                      className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
+                      width={200}
+                      height={100}
+                      style={{ objectFit: 'contain' }}
+                    />
+                  </div>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>
+                    Anik crafts brand<br /> identities for<br /> multinational clients,<br /> including Zerodha,<br /> Wild Stone, and<br /> Cycle. His mission:<br /> to elevate design<br /> standards and<br /> empower the next<br /> generation of<br /> designers.
+                  </p>
+                </TooltipContent>
+              </Tooltip>
 
+              {/* Speaker 3 */}
+              <Tooltip>
+                <TooltipTrigger>
+                  <div className="group">
+                    <Image
+                      src="/speakers/3.svg"
+                      alt="Speaker 3"
+                      className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
+                      width={200}
+                      height={100}
+                      style={{ objectFit: 'contain' }}
+                    />
+                  </div>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>
+                    Ansh runs India’s<br /> biggest YouTube<br /> Channel for<br /> learning UX & AI<br /> and free platforms<br /> like HowToPrompt.in<br /> to learn about<br /> AI easily.
+                  </p>
+                </TooltipContent>
+              </Tooltip>
 
-</div>
+              {/* Speaker 4 */}
+              <Tooltip>
+                <TooltipTrigger>
+                  <div className="group">
+                    <Image
+                      src="/speakers/4.svg"
+                      alt="Speaker 4"
+                      className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
+                      width={200}
+                      height={100}
+                      style={{ objectFit: 'contain' }}
+                    />
+                  </div>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>
+                    Pravinsinh Solanki<br /> is an industrial<br /> designer with over<br /> 18 years of<br /> experience in<br /> India and Italy.<br /> His award-winning<br /> bamboo designs<br /> are showcased at<br /> the World Bamboo<br /> Museum.
+                  </p>
+                </TooltipContent>
+              </Tooltip>
 
-  </div>
-</section></>)};
+              {/* Speaker 5 */}
+              <Tooltip>
+                <TooltipTrigger>
+                  <div className="group">
+                    <Image
+                      src="/speakers/5.svg"
+                      alt="Speaker 5"
+                      className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
+                      width={200}
+                      height={100}
+                      style={{ objectFit: 'contain' }}
+                    />
+                  </div>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>
+                    With over a decade<br /> of experience, Sarun<br /> has led design<br /> initiatives for brands<br /> like Swiggy,<br /> Licious, and Bounce.
+                  </p>
+                </TooltipContent>
+              </Tooltip>
+              
+              {/* Speaker 6 */}
+              <Tooltip>
+                <TooltipTrigger>
+                  <div className="group">
+                    <Image
+                      src="/speakers/6.svg"
+                      alt="Speaker 6"
+                      className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
+                      width={200}
+                      height={100}
+                      style={{ objectFit: 'contain' }}
+                    />
+                  </div>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>
+                    Munish started off<br /> by sharing his work<br /> on Instagram<br /> consistently for<br /> 4 years, which<br /> led him to receive<br /> work from over<br /> 500 clients,<br /> such as Apple,<br /> Louis Vuitton,<br /> and Nike.
+                  </p>
+                </TooltipContent>
+              </Tooltip>
+
+              {/* Speaker 7 */}
+              <Tooltip>
+                <TooltipTrigger>
+                  <div className="group">
+                    <Image
+                      src="/speakers/7.svg"
+                      alt="Speaker 7"
+                      className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
+                      width={200}
+                      height={100}
+                      style={{ objectFit: 'contain' }}
+                    />
+                  </div>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>
+                    Shana Smith is a<br /> professor at National<br /> Taiwan University<br /> specializing in<br /> haptics technology,<br /> human-computer<br /> interaction, and<br /> virtual/augmented<br /> reality.
+                  </p>
+                </TooltipContent>
+              </Tooltip>
+
+              {/* Speaker 8 */}
+              <Tooltip>
+                <TooltipTrigger>
+                  <div className="group">
+                    <Image
+                      src="/speakers/8.svg"
+                      alt="Speaker 8"
+                      className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
+                      width={200}
+                      height={100}
+                      style={{ objectFit: 'contain' }}
+                    />
+                  </div>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>
+                    Khushik Pahwa is<br /> a brand designer<br /> and an agency<br /> owner with a<br /> passion for<br /> creating designs<br /> and brands<br /> filled with stories<br /> and empathy.
+                  </p>
+                </TooltipContent>
+              </Tooltip>
+
+              {/* Speaker 9 */}
+              <Tooltip>
+                <TooltipTrigger>
+                  <div className="group">
+                    <Image
+                      src="/speakers/9.svg"
+                      alt="Speaker 9"
+                      className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
+                      width={200}
+                      height={100}
+                      style={{ objectFit: 'contain' }}
+                    />
+                  </div>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>
+                    Anoop Joy is the<br /> Director of Product<br /> Design at Times<br /> Internet, where he<br /> leads transformative<br /> design initiatives<br /> for platforms like<br /> Times Black and<br /> Times Prime.
+                  </p>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};
+
 
 
 

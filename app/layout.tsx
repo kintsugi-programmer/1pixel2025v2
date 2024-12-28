@@ -1,5 +1,6 @@
 // RootLayout.tsx
-
+import { Cursor } from 'react-creative-cursor';
+import 'react-creative-cursor/dist/styles.css';
 import type { Metadata } from "next";
 import "./globals.css"; // Ensure this imports your custom font styles
 import Nav from "@/component/Nav";
@@ -20,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased bg-[#131313] text-white">
+      <body className="antialiased bg-[#131313] text-white" data-cursor-color="#FBD75E"> 
         <Suspense fallback={<Loading />}>
           {/* Responsive Navbar */}
           <div className="w-full bg-[#131313] fixed left-0 z-50">

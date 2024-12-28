@@ -13,9 +13,12 @@ import {
   IconHome,
   IconNews,
   IconNewSection,
+  IconBrandWhatsapp,
   IconTerminal2,
 } from "@tabler/icons-react";
 import Image from "next/image";
+import { Cursor } from 'react-creative-cursor';
+import 'react-creative-cursor/dist/styles.css';
 
 export function Dock() {
   const links = [
@@ -25,22 +28,6 @@ export function Dock() {
         <IconBrandLinkedin className="h-full w-full text-[#FFF6E1]" />
       ),
       href: "https://www.linkedin.com/company/1pixel-designconf/",
-    },
-    {
-
-      title: "X",
-      icon: (
-        <IconBrandX className="h-full w-full text-[#FFF6E1]" />
-      ),
-      href: "https://x.com/hcdiiitd?lang=en",
-    },
-
-    {
-      title: "Facebook",
-      icon: (
-        <IconBrandFacebook className="h-full w-full text-[#FFF6E1]" />
-      ),
-      href: "https://www.facebook.com/hcdiiitd/",
     },
 
 
@@ -61,9 +48,17 @@ export function Dock() {
       ),
       href: "https://www.youtube.com/@1PixelDesignConference",
     },
+    {
+      title: "1Px DesCon Communit",
+      icon: (
+        <IconBrandWhatsapp className="h-full w-full text-[#FFF6E1]" />
+      ),
+      href: "https://chat.whatsapp.com/ISykFouJbWzLFfAnz5PHrv",
+    },
+
   ];
   return (
-    <div className="flex items-center justify-center w-full">
+    <div className="flex items-center justify-center w-full" data-cursor-color="#E08ABA" data-cursor-size="25px">
       <FloatingDock
         
         items={links}

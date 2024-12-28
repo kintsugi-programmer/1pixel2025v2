@@ -1,9 +1,11 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { Cursor } from 'react-creative-cursor';
+import 'react-creative-cursor/dist/styles.css';
 const Nav = () => {
   return (
-    <div className="py-2 px-4 z-50 text-bold sticky">
+    <div className="py-2 px-4 z-50 text-bold sticky" data-cursor-color="#E08ABA" data-cursor-size="25px">
     <div className="font-sf w-full py-4  flex items-center justify-between px-12 text-[#FFF6E1]">
       {/* Logo and Conference Name */}
       <Link href="/"> <div className="flex items-center space-x-4">
