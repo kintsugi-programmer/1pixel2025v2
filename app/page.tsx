@@ -654,7 +654,7 @@ const Speakers = () => {
             backgroundRepeat: 'no-repeat',
             backgroundAttachment: 'fixed',
           }}
-          data-cursor-size="50px" data-cursor-color="#E08ABA" 
+          
         >
           <div
             data-cursor-magnetic
@@ -664,9 +664,9 @@ const Speakers = () => {
             Our Speakers
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 px-5 py-5 ">
+          <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-8 px-5 py-5 ">
             {/* Speaker 1 */}
-            <TooltipProvider>
+            <TooltipProvider delayDuration={0}>
               <Tooltip>
                 <TooltipTrigger>
                   <div className="group">
