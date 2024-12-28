@@ -2,8 +2,8 @@ import React from 'react';
 import Image from 'next/image';
 
 const Loading = () => {
-  return (
-    <div className="relative flex items-center justify-center h-screen ">
+  return (<div className="relative flex flex-col items-center justify-center h-screen" >
+    <div className="relative flex items-center justify-center">
       <div>
         <Image
           src="/Hero/Vector.svg"
@@ -23,6 +23,8 @@ const Loading = () => {
           style={{ objectFit: 'contain' }}
         />
       </div>
+     
+    </div> <div className='py-5 font-bold text-xl text-[#FFF6E1]'>Good Things Take Time <br />- 1Px DesCon Team 🩷</div>
     </div>
   );
 };
