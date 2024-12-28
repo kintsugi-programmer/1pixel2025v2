@@ -370,7 +370,7 @@ const Past = () => {
   return (
     <section id="past"  >
     <div
-    className="w-full h-auto sm:pl-[10rem] flex flex-col items-center sm:items-start sm:flex-row" data-cursor-size="50px" data-cursor-color="#E08ABA" 
+    className="w-full h-auto sm:pl-[10rem] flex flex-col items-center sm:items-start sm:flex-row"  
     ><div >
           <div data-cursor-magnetic style={{ fontFamily: 'WeirdComicItalic, sans-serif' }} 
          className="pt-40 sm:text-7xl flex justify-center text-center sm:text-left sm:justify-start text-4xl text-[#FFF6E1]">
