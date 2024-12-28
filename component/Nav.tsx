@@ -8,10 +8,10 @@ const Nav = () => {
       {/* Logo and Conference Name */}
       <Link href="/"> <div className="flex items-center space-x-4">
              <Image
-                  src="/Logo.svg"
+                  src="/logonav.svg"
                   alt="Logo"
                   className="transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
-                  width={20}
+                  width={30}
                   height={100}
                   style={{ objectFit: 'contain' }}
                 />
@@ -25,6 +25,15 @@ const Nav = () => {
         <Link href="#about">
           <span className="cursor-pointer hover:text-[#d1d1d1] transition-colors">About Us</span>
         </Link>
+        <Link href="#speakers">
+          <span className="cursor-pointer hover:text-[#d1d1d1] transition-colors">Speakers</span>
+        </Link>
+        <Link href="#merchandise">
+          <span className="cursor-pointer hover:text-[#d1d1d1] transition-colors">Merch!!</span>
+        </Link>
+        <Link href="#workshops">
+          <span className="cursor-pointer hover:text-[#d1d1d1] transition-colors">Workshops</span>
+        </Link>
         <Link href="#past">
           <span className="cursor-pointer hover:text-[#d1d1d1] transition-colors">Past Editions</span>
         </Link>
@@ -32,7 +41,7 @@ const Nav = () => {
           <span className="cursor-pointer hover:text-[#d1d1d1] transition-colors">Upcoming Events</span>
         </Link>
         <Link href="#sponsors">
-          <span className="cursor-pointer hover:text-[#d1d1d1] transition-colors">Our Sponsors</span>
+          <span className="cursor-pointer hover:text-[#d1d1d1] transition-colors">Sponsors</span>
         </Link>
         <Link href="#memories">
           <span className="cursor-pointer hover:text-[#d1d1d1] transition-colors">Past Memories</span>

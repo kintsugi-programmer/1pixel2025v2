@@ -14,6 +14,18 @@ export const ContactUs = () => {
   );
 };
 
+export const Adobe = () => {
+  return (
+    <Link href="https://forms.gle/YPBvLiU98hiTqFV97">
+      <StyledWrapper2>
+        <button className="learn-more">
+          Register Here
+        </button>
+      </StyledWrapper2>
+    </Link>
+  );
+};
+
 export const Archive = () => {
   return (
     <Link href="https://1pxdesignconf2024.vercel.app/">

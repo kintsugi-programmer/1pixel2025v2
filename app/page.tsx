@@ -8,7 +8,7 @@ import GradualSpacing from "@/components/ui/gradual-spacing";
 import { VelocityScroll } from "@/components/ui/scroll-based-velocity";
 import Image from "next/image";
 import { IconMail } from '@tabler/icons-react';
-import { AboutButton,GetTicketsButton,LearnMore,Spons ,JoinCommunity,Archive,ContactUs } from "@/components/ui/Buttons";
+import { AboutButton,GetTicketsButton,LearnMore,Spons ,JoinCommunity,Archive,ContactUs,Adobe } from "@/components/ui/Buttons";
 import Link from "next/link";
 import { Cursor } from 'react-creative-cursor';
 import 'react-creative-cursor/dist/styles.css';
@@ -36,7 +36,17 @@ export default function Home() {
   <Hero />
   <Speakers/>
   <Merchandise/>
+  <VelocityScroll
+      text="Workshops Workshops Workshops Workshops "
+      default_velocity={3}
+      className=" text-center text-4xl   dark:text-white md:text-7xl md:leading-[5rem]"
+    />
   <Workshops/>
+  <VelocityScroll
+      text="1pixel 1pixel 1pixel 1pixel "
+      default_velocity={3}
+      className=" text-center text-4xl   dark:text-white md:text-7xl md:leading-[5rem]"
+    />
   <About />
   <Past />
   <Events />
@@ -107,18 +117,15 @@ const FAQs = () => {
 
 const Workshops = () => {
   return (
-    <div className="h-[40rem] sm:h-[40rem] w-full sm:px-[5rem] sm:py-[5rem] p-10 flex flex-col sm:flex-row sm:space-x-20 sm:space-y-0 space-y-6 items-center justify-center text-[#FFF6E1]">
+    <section id="workshops" >
+    <div className="h-[55rem] sm:h-[40rem] w-full sm:px-[5rem] sm:py-[5rem] p-10 flex flex-col sm:flex-row sm:space-x-20 sm:space-y-0 space-y-6 items-center justify-center text-[#FFF6E1]">
      <div className="h-full max-w-screen-lg w-full border-4 border-[#FFF6E1] p-10 rounded-3xl">
      <div className="flex justify-center sm:space-x-5 space-y-2 sm:space-y-0 space-x-0 sm:flex-row flex-col">
     {/* <div data-cursor-magnetic className="text-black sm:text-3xl text-xl pt-10 text-center" style={{ fontFamily: 'LongWeekend, sans-serif' }}>
 the 1pixel design Conference serves as the platform for showcasing and <br />
 exploring the latest industry trends.
     </div> */}
-    <div className="text-[#FFF6E1] sm:text-6xl text-xl flex-2  justify-center text-left" style={{ fontFamily: 'LongWeekend, sans-serif' }}>
-    exciting <br />tshirts, tote <br />bags, and much <br />
-     much more!
-    </div>
-  <div className="group">
+      <div className="group">
   <Image
                 src="/workshops/adobe.svg"
                 alt="hcd logo"
@@ -127,9 +134,17 @@ exploring the latest industry trends.
                 height={100}
                 style={{ objectFit: 'contain' }}
               /></div>
+    <div className="flex flex-col">
+    <div className="text-[#FFF6E1] sm:text-6xl text-xl flex-2  justify-center text-left" style={{ fontFamily: 'LongWeekend, sans-serif' }}>
+    Adobe Express: A <br />Hands-On Experience
+    </div>
+    <div className="text-xl font-bold">4th January,2025 </div>
+    <div className="text-2xl py-2 sm:py-[1rem]">Adobe will conduct a workshop on Adobe Express. <br />Participants <span className="font-bold">must bring their laptops, drawing <br />tablets, ipads, etc. for the same. </span></div>
+    <Adobe/>
+    </div>
               </div>
     
-    </div></div>  
+    </div></div>  </section>
   );
 };
 
