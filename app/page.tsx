@@ -13,7 +13,7 @@ import GradualSpacing from "@/components/ui/gradual-spacing";
 import { VelocityScroll } from "@/components/ui/scroll-based-velocity";
 import Image from "next/image";
 import { IconMail } from '@tabler/icons-react';
-import { AboutButton,GetTicketsButton,LearnMore,Spons ,JoinCommunity,Archive,ContactUs,Adobe } from "@/components/ui/Buttons";
+import { AboutButton,GetTicketsButton,LearnMore,Spons ,JoinCommunity,Archive,ContactUs, } from "@/components/ui/Buttons";
 import Link from "next/link";
 import { Cursor } from 'react-creative-cursor';
 import 'react-creative-cursor/dist/styles.css';
@@ -145,7 +145,7 @@ exploring the latest industry trends.
     </div>
     <div className="text-xl font-bold">4th January,2025 </div>
     <div className="text-2xl py-2 sm:py-[1rem]">Adobe will conduct a workshop on Adobe Express. <br />Participants <span className="font-bold">must bring their laptops, drawing <br />tablets, ipads, etc. for the same. </span></div>
-    <Adobe/>
+    
     </div>
               </div>
     
@@ -511,10 +511,10 @@ const Events = () => {
     </div>
     <div className="w-full max-w-2xl mx-auto">
   <HeroVideoDialog
-    className="py-5"
+    className=" py-[5rem]"
     animationStyle="top-in-bottom-out"
     videoSrc="https://www.youtube.com/embed/wlnYnhDNsqg?si=7-5qkaJ7deDA_NMp"
-    thumbnailSrc="/Events/thumb1.svg"
+    thumbnailSrc="/Events/1.jpeg"
     thumbnailAlt="Panel Discussion with Don Norman | 1Pixel Design Conference'25"
   />
 </div>
@@ -750,26 +750,7 @@ const Speakers = () => {
                 </TooltipContent>
               </Tooltip>
 
-              {/* Speaker 5 */}
-              <Tooltip>
-                <TooltipTrigger>
-                  <div className="group">
-                    <Image
-                      src="/speakers/5.svg"
-                      alt="Speaker 5"
-                      className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
-                      width={200}
-                      height={100}
-                      style={{ objectFit: 'contain' }}
-                    />
-                  </div>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>
-                    With over a decade<br /> of experience, Sarun<br /> has led design<br /> initiatives for brands<br /> like Swiggy,<br /> Licious, and Bounce.
-                  </p>
-                </TooltipContent>
-              </Tooltip>
+
               
               {/* Speaker 6 */}
               <Tooltip>
