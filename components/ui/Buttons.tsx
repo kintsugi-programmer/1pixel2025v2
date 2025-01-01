@@ -1,6 +1,7 @@
 'use client'
 import styled from 'styled-components';
 import Link from "next/link";
+import { div } from 'framer-motion/client';
 
 export const ContactUs = () => {
   return (
@@ -82,6 +83,19 @@ export const GetTicketsButton = () => {
       <StyledWrapper2>
         <button className="learn-more">
           Get Tickets
+        </button>
+      </StyledWrapper2>
+    </Link>
+  );
+};
+
+export const ComboButton = () => {
+  return (
+    
+    <Link href="https://forms.gle/dgPqrXbnyKC6jot28" >
+      <StyledWrapper2>
+        <button className="learn-more">
+          Group Offer
         </button>
       </StyledWrapper2>
     </Link>

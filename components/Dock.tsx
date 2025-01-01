@@ -39,7 +39,7 @@ export function Dock() {
       icon: (
         <IconBrandInstagram className="h-full w-full text-[#FFF6E1]" />
       ),
-      href: "https://www.instagram.com/1px.descon/?hl=en",
+      href: "https://www.instagram.com/1px.Descon/?hl=en",
     },
     {
       title: "Youtube",
@@ -49,7 +49,7 @@ export function Dock() {
       href: "https://www.youtube.com/@1PixelDesignConference",
     },
     {
-      title: "1Px DesCon Communit",
+      title: "WhatsApp Community",
       icon: (
         <IconBrandWhatsapp className="h-full w-full text-[#FFF6E1]" />
       ),

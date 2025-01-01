@@ -5,7 +5,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip"
-
+import { ComboButton } from "@/components/ui/Buttons";
 import { ParallaxScroll } from "@/components/ParallexScroll";
 import WordPullUp from "@/components/ui/word-pull-up";
 import GradualSpacing from "@/components/ui/gradual-spacing";
@@ -123,8 +123,37 @@ const FAQs = () => {
 const Workshops = () => {
   return (
     <section id="workshops" >
-    <div data-cursor-size="50px" data-cursor-color="#E08ABA"  className="h-[55rem] sm:h-[40rem] w-full sm:px-[5rem] sm:py-[5rem] p-10 flex flex-col sm:flex-row sm:space-x-20 sm:space-y-0 space-y-6 items-center justify-center text-[#FFF6E1]">
-     <div className="h-full max-w-screen-lg w-full border-4 border-[#FFF6E1] p-10 rounded-3xl">
+    <div data-cursor-size="50px" data-cursor-color="#E08ABA"  className="h-[95rem] sm:h-[80rem] w-full sm:px-[5rem] sm:py-[5rem] p-10 flex flex-col sm:flex-col sm:space-x-20 sm:space-y-0 space-y-6 items-center justify-center text-[#FFF6E1]">
+
+    <div className=" max-w-screen-lg w-full border-4 border-[#FFF6E1] p-10 rounded-3xl">
+     <div className="flex justify-center sm:space-x-5 space-y-2 sm:space-y-0 space-x-0 sm:flex-row flex-col">
+    {/* <div data-cursor-magnetic className="text-black sm:text-3xl text-xl pt-10 text-center" style={{ fontFamily: 'LongWeekend, sans-serif' }}>
+the 1pixel design Conference serves as the platform for showcasing and <br />
+exploring the latest industry trends.
+    </div> */}
+      <div className="group">
+  <Image
+                src="/workshops/dilip.png"
+                alt="hcd logo"
+                className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
+                width={320}
+                height={100}
+                style={{ objectFit: 'contain' }}
+              /></div>
+    <div className="flex flex-col">
+    <div className="text-[#FFF6E1] sm:text-6xl text-xl flex-2  justify-center text-left" style={{ fontFamily: 'LongWeekend, sans-serif' }}>
+    How to Design <br />Characters for Games,<br /> Animation, and Comics
+    </div>
+    <div className="text-xl font-bold">5th January,2025 </div>
+    <div className="text-2xl py-2 sm:py-[1rem]">Join <span className="font-bold">Dilip Chaubey</span>,<br />Founder of <span className="font-bold">VINMICS &<br />Dilip Chaubey School of Digital Arts; </span>for an <br />exclusive workshop on designing characters for <br />games, animation and comics!</div>
+    
+    </div>
+              </div>
+    
+    </div>
+    <br />
+    <br />
+     <div className=" max-w-screen-lg w-full border-4 border-[#FFF6E1] p-10 rounded-3xl">
      <div className="flex justify-center sm:space-x-5 space-y-2 sm:space-y-0 space-x-0 sm:flex-row flex-col">
     {/* <div data-cursor-magnetic className="text-black sm:text-3xl text-xl pt-10 text-center" style={{ fontFamily: 'LongWeekend, sans-serif' }}>
 the 1pixel design Conference serves as the platform for showcasing and <br />
@@ -140,16 +169,20 @@ exploring the latest industry trends.
                 style={{ objectFit: 'contain' }}
               /></div>
     <div className="flex flex-col">
-    <div className="text-[#FFF6E1] sm:text-6xl text-xl flex-2  justify-center text-left" style={{ fontFamily: 'LongWeekend, sans-serif' }}>
+    <div className="text-[#FFF6E1] sm:text-6xl text-xl flex-2 justify-center text-left" style={{ fontFamily: 'LongWeekend, sans-serif' }}>
     Adobe Express: A <br />Hands-On Experience
     </div>
     <div className="text-xl font-bold">4th January,2025 </div>
+    <br /><br /><br /><br /><br />
     <div className="text-2xl py-2 sm:py-[1rem]">Adobe will conduct a workshop on Adobe Express. <br />Participants <span className="font-bold">must bring their laptops, drawing <br />tablets, ipads, etc. for the same. </span></div>
     
     </div>
               </div>
     
-    </div></div>  </section>
+    </div>
+   
+    
+    </div>  </section>
   );
 };
 
@@ -247,7 +280,7 @@ const Tickets = () => {
       </div>
 
 
-      <div className="absolute pt-[12rem] pl-[0rem] sm:pt-[40rem] sm:pl-[60rem] "><GetTicketsButton /></div>
+      <div className="absolute pt-[12rem] flex flex-row space-x-5 pl-[0rem] sm:pt-[40rem] sm:pl-[60rem] "><GetTicketsButton /><ComboButton/></div>
     </div>
     
   
@@ -415,7 +448,7 @@ const Footer = () => {
   return (
     <div className="py-10 h-10 px-10 text-[#FFF6E1]">
       <hr />
-      Made with 🩷 by 1Px DesCon Team
+      Made with 🩷 by 1Px Descon Team
     </div>
   )
 }
@@ -586,14 +619,14 @@ const Contact = () => {
             </div>
             <div className="flex flex-row space-x-2">
               <IconBrandInstagram stroke={2} />
-              <Link href="https://www.instagram.com/1px.descon/?hl=en" passHref>
-                <span>@1px.descon</span>
+              <Link href="https://www.instagram.com/1px.Descon/?hl=en" passHref>
+                <span>@1px.Descon</span>
               </Link>
             </div>
             <div className="flex flex-row space-x-2">
               <IconBrandWhatsapp stroke={2} />
               <Link href="https://chat.whatsapp.com/ISykFouJbWzLFfAnz5PHrv" passHref>
-                <span>1Px DesCon Community</span>
+                <span>1Px Descon Community</span>
               </Link>
             </div> 
           </div>
@@ -663,10 +696,126 @@ const Speakers = () => {
           >
             Our Speakers
           </div>
-
+          <div className="text-black sm:text-3xl text-xl pt-1 text-center" style={{ fontFamily: 'LongWeekend, sans-serif' }}>
+          4th January, 2025</div>
           <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-8 px-5 py-5 ">
-            {/* Speaker 1 */}
+            {/* Speaker 3 */}
+
             <TooltipProvider delayDuration={0}>
+
+            <Tooltip>
+                <TooltipTrigger>
+                  <div className="group">
+                    <Image
+                      src="/speakers/3.svg"
+                      alt="Speaker 3"
+                      className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
+                      width={200}
+                      height={100}
+                      style={{ objectFit: 'contain' }}
+                    />
+                  </div>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>
+                    Ansh runs India’s<br /> biggest YouTube<br /> Channel for<br /> learning UX & AI<br /> and free platforms<br /> like HowToPrompt.in<br /> to learn about<br /> AI easily.
+                  </p>
+                </TooltipContent>
+              </Tooltip>
+
+                            {/* Speaker 4 */}
+                            <Tooltip>
+                <TooltipTrigger>
+                  <div className="group">
+                    <Image
+                      src="/speakers/4.svg"
+                      alt="Speaker 4"
+                      className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
+                      width={200}
+                      height={100}
+                      style={{ objectFit: 'contain' }}
+                    />
+                  </div>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>
+                    Pravinsinh Solanki<br /> is an industrial<br /> designer with over<br /> 18 years of<br /> experience in<br /> India and Italy.<br /> His award-winning<br /> bamboo designs<br /> are showcased at<br /> the World Bamboo<br /> Museum.
+                  </p>
+                </TooltipContent>
+              </Tooltip>
+
+                            {/* Speaker 9 */}
+                            <Tooltip>
+                <TooltipTrigger>
+                  <div className="group">
+                    <Image
+                      src="/speakers/9.svg"
+                      alt="Speaker 9"
+                      className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
+                      width={200}
+                      height={100}
+                      style={{ objectFit: 'contain' }}
+                    />
+                  </div>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>
+                    Anoop Joy is the<br /> Director of Product<br /> Design at Times<br /> Internet, where he<br /> leads transformative<br /> design initiatives<br /> for platforms like<br /> Times Black and<br /> Times Prime.
+                  </p>
+                </TooltipContent>
+              </Tooltip>
+
+              {/* Speaker 8 */}
+              <Tooltip>
+                <TooltipTrigger>
+                  <div className="group">
+                    <Image
+                      src="/speakers/8.svg"
+                      alt="Speaker 8"
+                      className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
+                      width={200}
+                      height={100}
+                      style={{ objectFit: 'contain' }}
+                    />
+                  </div>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>
+                    Khushik Pahwa is<br /> a brand designer<br /> and an agency<br /> owner with a<br /> passion for<br /> creating designs<br /> and brands<br /> filled with stories<br /> and empathy.
+                  </p>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
+            </div>
+            <div className="text-black sm:text-3xl text-xl pt-1 text-center" style={{ fontFamily: 'LongWeekend, sans-serif' }}>
+            5th January, 2025</div>
+            <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-8 px-5 py-5 ">
+
+              <TooltipProvider delayDuration={0}>
+
+              {/* Speaker 7 */}
+              <Tooltip>
+                <TooltipTrigger>
+                  <div className="group">
+                    <Image
+                      src="/speakers/7.svg"
+                      alt="Speaker 7"
+                      className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
+                      width={200}
+                      height={100}
+                      style={{ objectFit: 'contain' }}
+                    />
+                  </div>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>
+                    Shana Smith is a<br /> professor at National<br /> Taiwan University<br /> specializing in<br /> haptics technology,<br /> human-computer<br /> interaction, and<br /> virtual/augmented<br /> reality.
+                  </p>
+                </TooltipContent>
+              </Tooltip>
+
+
+            {/* Speaker 1 */}
               <Tooltip>
                 <TooltipTrigger>
                   <div className="group">
@@ -683,6 +832,28 @@ const Speakers = () => {
                 <TooltipContent>
                   <p>
                     Saptarshi is a highly<br /> influential figure in the<br /> fields of design,<br /> startups & content<br /> creation. He has the<br /> ability to explain<br /> complex concepts in<br /> a way that is easily<br /> understandable to<br /> everyone.
+                  </p>
+                </TooltipContent>
+              </Tooltip>
+
+
+                            {/* Speaker 6 */}
+                            <Tooltip>
+                <TooltipTrigger>
+                  <div className="group">
+                    <Image
+                      src="/speakers/6.svg"
+                      alt="Speaker 6"
+                      className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
+                      width={200}
+                      height={100}
+                      style={{ objectFit: 'contain' }}
+                    />
+                  </div>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>
+                    Munish started off<br /> by sharing his work<br /> on Instagram<br /> consistently for<br /> 4 years, which<br /> led him to receive<br /> work from over<br /> 500 clients,<br /> such as Apple,<br /> Louis Vuitton,<br /> and Nike.
                   </p>
                 </TooltipContent>
               </Tooltip>
@@ -708,133 +879,18 @@ const Speakers = () => {
                 </TooltipContent>
               </Tooltip>
 
-              {/* Speaker 3 */}
-              <Tooltip>
-                <TooltipTrigger>
-                  <div className="group">
-                    <Image
-                      src="/speakers/3.svg"
-                      alt="Speaker 3"
-                      className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
-                      width={200}
-                      height={100}
-                      style={{ objectFit: 'contain' }}
-                    />
-                  </div>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>
-                    Ansh runs India’s<br /> biggest YouTube<br /> Channel for<br /> learning UX & AI<br /> and free platforms<br /> like HowToPrompt.in<br /> to learn about<br /> AI easily.
-                  </p>
-                </TooltipContent>
-              </Tooltip>
+              
 
-              {/* Speaker 4 */}
-              <Tooltip>
-                <TooltipTrigger>
-                  <div className="group">
-                    <Image
-                      src="/speakers/4.svg"
-                      alt="Speaker 4"
-                      className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
-                      width={200}
-                      height={100}
-                      style={{ objectFit: 'contain' }}
-                    />
-                  </div>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>
-                    Pravinsinh Solanki<br /> is an industrial<br /> designer with over<br /> 18 years of<br /> experience in<br /> India and Italy.<br /> His award-winning<br /> bamboo designs<br /> are showcased at<br /> the World Bamboo<br /> Museum.
-                  </p>
-                </TooltipContent>
-              </Tooltip>
+
 
 
               
-              {/* Speaker 6 */}
-              <Tooltip>
-                <TooltipTrigger>
-                  <div className="group">
-                    <Image
-                      src="/speakers/6.svg"
-                      alt="Speaker 6"
-                      className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
-                      width={200}
-                      height={100}
-                      style={{ objectFit: 'contain' }}
-                    />
-                  </div>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>
-                    Munish started off<br /> by sharing his work<br /> on Instagram<br /> consistently for<br /> 4 years, which<br /> led him to receive<br /> work from over<br /> 500 clients,<br /> such as Apple,<br /> Louis Vuitton,<br /> and Nike.
-                  </p>
-                </TooltipContent>
-              </Tooltip>
 
-              {/* Speaker 7 */}
-              <Tooltip>
-                <TooltipTrigger>
-                  <div className="group">
-                    <Image
-                      src="/speakers/7.svg"
-                      alt="Speaker 7"
-                      className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
-                      width={200}
-                      height={100}
-                      style={{ objectFit: 'contain' }}
-                    />
-                  </div>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>
-                    Shana Smith is a<br /> professor at National<br /> Taiwan University<br /> specializing in<br /> haptics technology,<br /> human-computer<br /> interaction, and<br /> virtual/augmented<br /> reality.
-                  </p>
-                </TooltipContent>
-              </Tooltip>
 
-              {/* Speaker 8 */}
-              <Tooltip>
-                <TooltipTrigger>
-                  <div className="group">
-                    <Image
-                      src="/speakers/8.svg"
-                      alt="Speaker 8"
-                      className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
-                      width={200}
-                      height={100}
-                      style={{ objectFit: 'contain' }}
-                    />
-                  </div>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>
-                    Khushik Pahwa is<br /> a brand designer<br /> and an agency<br /> owner with a<br /> passion for<br /> creating designs<br /> and brands<br /> filled with stories<br /> and empathy.
-                  </p>
-                </TooltipContent>
-              </Tooltip>
 
-              {/* Speaker 9 */}
-              <Tooltip>
-                <TooltipTrigger>
-                  <div className="group">
-                    <Image
-                      src="/speakers/9.svg"
-                      alt="Speaker 9"
-                      className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
-                      width={200}
-                      height={100}
-                      style={{ objectFit: 'contain' }}
-                    />
-                  </div>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>
-                    Anoop Joy is the<br /> Director of Product<br /> Design at Times<br /> Internet, where he<br /> leads transformative<br /> design initiatives<br /> for platforms like<br /> Times Black and<br /> Times Prime.
-                  </p>
-                </TooltipContent>
-              </Tooltip>
+              
+
+
             </TooltipProvider>
           </div>
         </div>
@@ -940,12 +996,12 @@ the 1pixel design Conference serves as the platform for showcasing and <br />
 exploring the latest industry trends.
     </div> */}
     <div className="text-[#FFF6E1] sm:text-6xl text-xl flex-2 py-20 justify-center text-left" style={{ fontFamily: 'LongWeekend, sans-serif' }}>
-    exciting <br />tshirts, tote <br />bags, and much <br />
-     much more!
+    Exciting tshirts, <br />tote bags, stickers, <br />and much, much more!
+     
     </div>
   <div className="group">
   <Image
-                src="/merch/merch.svg"
+                src="/merch/merch.png"
                 alt="hcd logo"
                 className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
                 width={700}
@@ -1135,11 +1191,11 @@ const Hero = () => {
  className="absolute top-[20rem] left-[40rem] z-5 text-[#EEEBE4]">
           <WordPullUp
       className="text-4xl   md:text-8xl "
-      words="descon"
+      words="Descon"
     />
      {/* <GradualSpacing
       className="font-display text-center text-4xl  md:text-8xl "
-      text="DESCON"
+      text="Descon"
     /> */}
         </div>
         <div style={{ fontFamily: 'WeirdComicItalic, sans-serif' }}
@@ -1161,7 +1217,7 @@ const Hero = () => {
         
         <div className="absolute top-[37rem] right-40">
           <div className="flex flex-row space-x-5">          <AboutButton/> <GetTicketsButton />
-         </div>
+         </div><div className='pt-7'> <ComboButton/> </div>
 
           
           
@@ -1190,7 +1246,7 @@ const Hero = () => {
           
           <div className="text-justify text-[#FBD75E] ">9:30am-5pm <span className="text-justify text-[#458F64] font-bold ">|</span> 4th - 5th January 2025  
            <span className="text-justify text-[#458F64] font-bold "> |</span> R&D, IIIT-Delhi</div>
-           <div className="justify-center flex flex-row space-x-5">          <AboutButton/> <GetTicketsButton />
+           <div className="justify-center flex flex-row space-x-1">          <AboutButton/> <GetTicketsButton /><ComboButton/>
           </div>
 
         </div>
@@ -1213,37 +1269,37 @@ const Hero = () => {
 
 const images2 = [
 
-  "/FilterImages/1.png",
-  "/FilterImages/2.png",
-  "/FilterImages/3.png",
-  "/FilterImages/4.png",
-  "/FilterImages/5.png",
+  "/FilterImages/1-min.png",
+  "/FilterImages/2-min.png",
+  "/FilterImages/3-min.png",
+  "/FilterImages/4-min.png",
+  "/FilterImages/5-min.png",
 
 ]
 
 const images = [
-  "/images/20.png",
-  "/images/22.png",
-  "/images/23.png",
-  "/images/25.png",
-  "/images/1.png",
-  "/images/2.png",
-  "/images/3.png",
-  "/images/4.png",
-  "/images/5.png",
-  "/images/6.png",
-  "/images/7.png",
+  "/images/20-min.png",
+  "/images/22-min.png",
+  "/images/23-min.png",
+  "/images/25-min.png",
+  "/images/1-min.png",
+  "/images/2-min.png",
+  "/images/3-min.png",
+  "/images/4-min.png",
+  "/images/5-min.png",
+  "/images/6-min.png",
+  "/images/7-min.png",
 
-  "/images/8.png",
-  "/images/9.png",
-  "/images/10.png",
-  "/images/11.png",
-  "/images/12.png",
-  "/images/13.png",  
-  "/images/14.png",
-  "/images/15.png",
-  "/images/16.png",
-  "/images/19.png",
+  "/images/8-min.png",
+  "/images/9-min.png",
+  "/images/10-min.png",
+  "/images/11-min.png",
+  "/images/12-min.png",
+  "/images/13-min.png",  
+  "/images/14-min.png",
+  "/images/15-min.png",
+  "/images/16-min.png",
+  "/images/19-min.png",
 
 
 ]

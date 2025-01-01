@@ -24,7 +24,7 @@ const Loading = () => {
         />
       </div>
      
-    </div> <div className='py-5 font-bold text-xl text-[#FFF6E1]'>Good Things Take Time <br />- 1Px DesCon Team 🩷</div>
+    </div> <div className='py-5 font-bold text-xl text-[#FFF6E1]'>Good Things Take Time <br />- 1Px Descon Team 🩷</div>
     </div>
   );
 };
