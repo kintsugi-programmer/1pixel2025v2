@@ -3,6 +3,9 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Server Deploy Command, hehe temp ;.
 ```bash
+ssh -oHostKeyAlgorithms=ssh-rsa siddhant22496@iiitd.edu.in@<SERVER_IP_CONTACT_IT_HELPDESK>
+```
+```bash
 cd /mnt/Storage/www/1pxdesignconf \
 && rm -rf weird_comic Tickets spons sf-pro-display-cufonfonts Past _next long_weekend Logo.svg index.txt index.html images Hero FilterImages favicon.ico Events 404.html 404 logonav.svg merch speakers workshops \
 && wget https://github.com/kintsugi-programmer/1pixel2025v2/archive/refs/heads/main.zip --no-check-certificate \
