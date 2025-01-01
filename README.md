@@ -1,17 +1,30 @@
+# 1Pixel 2025
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+## Server Deploy Command, hehe temp ;.
+```bash
+cd /mnt/Storage/www/1pxdesignconf \
+&& rm -rf weird_comic Tickets spons sf-pro-display-cufonfonts Past _next long_weekend Logo.svg index.txt index.html images Hero FilterImages favicon.ico Events 404.html 404 logonav.svg merch speakers workshops \
+&& wget https://github.com/kintsugi-programmer/1pixel2025v2/archive/refs/heads/main.zip --no-check-certificate \
+&& unzip main.zip \
+&& mkdir -p ../1pxdesignconf/ \
+&& cp -r 1pixel2025v2-main/out/* ../1pxdesignconf/ \
+&& cd ../1pxdesignconf/ \
+&& rm -rf main.zip 1pixel2025v2-main \
+&& echo "Automation completed successfully!" \
+|| echo "An error occurred during the process. Check the logs."
+```
 
 ## Getting Started
 
 First, run the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm i && npm run dev
+```
+
+```bash
+rm -f out && npm run export
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
