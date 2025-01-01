@@ -161,7 +161,7 @@ exploring the latest industry trends.
     </div> */}
       <div className="group">
   <Image
-                src="/workshops/adobe.svg"
+                src="/workshops/adobe-min.png"
                 alt="hcd logo"
                 className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
                 width={320}
@@ -457,13 +457,7 @@ const Events = () => {
     <section id="events" data-cursor-size="100px" data-cursor-color="#E08ABA"> 
       <div className='h-auto  w-full rounded-3xl flex bg-[#EA8A5D] flex-col items-center justify-start pt-1 mx-auto'
   
-  style={{
-    backgroundImage: "url('/FilterImages/Strokes texture 2.png')",
-    backgroundSize: 'cover',
-    backgroundPosition: 'center center',
-    backgroundRepeat: 'no-repeat',
-    backgroundAttachment: 'fixed',
-  }}>
+  >
 
 
     <WordRotate
@@ -908,13 +902,7 @@ const About = () => {
     <section id="about"  
  >
   <div  className='h-auto  w-full rounded-3xl flex bg-[#458F64] flex-col items-center justify-start pt-1 mx-auto h-auto w-full rounded-3xl flex bg-[#458F64]  justify-start pt-1 mx-auto'
-  style={{
-    backgroundImage: "url('/FilterImages/Strokes texture 2.png')",
-    backgroundSize: 'cover',
-    backgroundPosition: 'center center',
-    backgroundRepeat: 'no-repeat',
-    backgroundAttachment: 'fixed',
-  }}>
+  >
     <div data-cursor-magnetic style={{ fontFamily: 'WeirdComicItalic, sans-serif' }} 
          className="pt-40 sm:text-7xl text-4xl text-[#FAD85E]">
       About Us
@@ -983,13 +971,7 @@ const Merchandise = () => {
     <section id="merchandise"  
  >
   <div  className='h-auto  w-full rounded-3xl flex bg-[#4F3B7E] flex-col items-center justify-start pt-1 mx-auto h-auto w-full rounded-3xl flex bg-[#458F64]  justify-start pt-1 mx-auto'
-  style={{
-    backgroundImage: "url('/FilterImages/Strokes texture 2.png')",
-    backgroundSize: 'cover',
-    backgroundPosition: 'center center',
-    backgroundRepeat: 'no-repeat',
-    backgroundAttachment: 'fixed',
-  }}>
+  >
      <div className="flex justify-center sm:space-x-5 space-y-2 sm:space-y-0 space-x-0 sm:flex-row flex-col">
     {/* <div data-cursor-magnetic className="text-black sm:text-3xl text-xl pt-10 text-center" style={{ fontFamily: 'LongWeekend, sans-serif' }}>
 the 1pixel design Conference serves as the platform for showcasing and <br />
@@ -1019,13 +1001,7 @@ const Memories = () => {
     <section id="memories" data-cursor-color="#FFF6E1"> 
   <div className='h-auto  w-full rounded-3xl flex bg-[#EA8A5D] flex-col items-center justify-start pt-1 mx-auto'
   
-  style={{
-    backgroundImage: "url('/FilterImages/Strokes texture 2.png')",
-    backgroundSize: 'cover',
-    backgroundPosition: 'center center',
-    backgroundRepeat: 'no-repeat',
-    backgroundAttachment: 'fixed',
-  }}>
+  >
 
 
     <WordRotate
