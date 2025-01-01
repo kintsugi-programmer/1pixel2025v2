@@ -487,7 +487,7 @@ const Events = () => {
   <div className=" w-1/2 text-justify">
   <div className="group">
   <Image
-                src="/Events/sap.svg"
+                src="/Events/sap-min.png"
                 alt="hcd logo"
                 width={250}
                 className="pt-5 pb-14 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center "
@@ -506,7 +506,7 @@ const Events = () => {
   <div className="w-1/2 text-justify">
   <div className="group">
   <Image
-                src="/Events/don.svg"
+                src="/Events/don-min.png"
                 alt="hcd logo"
                 className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
                 width={300}
@@ -522,7 +522,7 @@ const Events = () => {
   <div className="w-1/2 text-justify">
   <div className="group">
   <Image
-    src="/Events/man.svg"
+    src="/Events/man-min.png"
     alt="hcd logo"
     width={250}
     height={100}
@@ -707,7 +707,7 @@ const Speakers = () => {
                 <TooltipTrigger>
                   <div className="group">
                     <Image
-                      src="/speakers/3.svg"
+                      src="/speakers/3-min.png"
                       alt="Speaker 3"
                       className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
                       width={200}
@@ -728,7 +728,7 @@ const Speakers = () => {
                 <TooltipTrigger>
                   <div className="group">
                     <Image
-                      src="/speakers/4.svg"
+                      src="/speakers/4-min.png"
                       alt="Speaker 4"
                       className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
                       width={200}
@@ -749,7 +749,7 @@ const Speakers = () => {
                 <TooltipTrigger>
                   <div className="group">
                     <Image
-                      src="/speakers/9.svg"
+                      src="/speakers/9-min.png"
                       alt="Speaker 9"
                       className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
                       width={200}
@@ -770,7 +770,7 @@ const Speakers = () => {
                 <TooltipTrigger>
                   <div className="group">
                     <Image
-                      src="/speakers/8.svg"
+                      src="/speakers/8-min.png"
                       alt="Speaker 8"
                       className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
                       width={200}
@@ -798,7 +798,7 @@ const Speakers = () => {
                 <TooltipTrigger>
                   <div className="group">
                     <Image
-                      src="/speakers/7.svg"
+                      src="/speakers/7-min.png"
                       alt="Speaker 7"
                       className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
                       width={200}
@@ -820,7 +820,7 @@ const Speakers = () => {
                 <TooltipTrigger>
                   <div className="group">
                     <Image
-                      src="/speakers/1.svg"
+                      src="/speakers/1-min.png"
                       alt="Speaker 1"
                       className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
                       width={200}
@@ -842,7 +842,7 @@ const Speakers = () => {
                 <TooltipTrigger>
                   <div className="group">
                     <Image
-                      src="/speakers/6.svg"
+                      src="/speakers/6-min.png"
                       alt="Speaker 6"
                       className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
                       width={200}
@@ -863,7 +863,7 @@ const Speakers = () => {
                 <TooltipTrigger>
                   <div className="group">
                     <Image
-                      src="/speakers/2.svg"
+                      src="/speakers/2-min.png"
                       alt="Speaker 2"
                       className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
                       width={200}
