@@ -95,7 +95,7 @@ export const ComboButton = () => {
     <Link href="https://forms.gle/dgPqrXbnyKC6jot28" >
       <StyledWrapper2>
         <button className="learn-more">
-          Group Offer
+          Group Tickets
         </button>
       </StyledWrapper2>
     </Link>

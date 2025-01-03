@@ -48,6 +48,12 @@ export default function Home() {
     />
   <Workshops/>
   <VelocityScroll
+      text="Schedule Schedule Schedule Schedule "
+      default_velocity={3}
+      className=" text-center text-4xl   dark:text-white md:text-7xl md:leading-[5rem]"
+    />
+    <Sch/>
+    <VelocityScroll
       text="1pixel 1pixel 1pixel 1pixel "
       default_velocity={3}
       className=" text-center text-4xl   dark:text-white md:text-7xl md:leading-[5rem]"
@@ -67,10 +73,23 @@ export default function Home() {
    
   );
 }
-
+const Sch = () => {return(    <section id="sch" >
+  <div className="flex flex-col items-center justify-center">
+  <div className="w-full h-auto">
+      <Image
+        src="/workshops/sch-min.png"
+        alt="Schedule"
+        layout="responsive"
+        width={1920} // or your image's natural width
+        height={1080} // or your image's natural height
+        className="object-cover w-full h-auto"
+      />
+    </div></div></section>
+)};
 
 const FAQs = () => {
   return (
+    <section id="FAQs" >
     <div className="h-[40rem] sm:h-[40rem] w-full sm:px-[10rem] px-5 flex flex-col sm:flex-row sm:space-x-20 sm:space-y-0 space-y-6 items-center justify-center text-[#FFF6E1]">
        <div data-cursor-magnetic style={{ fontFamily: 'WeirdComicItalic, sans-serif' }} 
          className=" sm:text-7xl flex justify-center text-center text-4xl text-[#FFF6E1]">
@@ -116,14 +135,15 @@ const FAQs = () => {
         </AccordionItem>
       </Accordion>
     </div>
+    </section >
   );
 };
 
 
-const Workshops = () => {
+const Workshops2 = () => {
   return (
     <section id="workshops" >
-    <div data-cursor-size="50px" data-cursor-color="#E08ABA"  className="h-[95rem] sm:h-[80rem] w-full sm:px-[5rem] sm:py-[5rem] p-10 flex flex-col sm:flex-col sm:space-x-20 sm:space-y-0 space-y-6 items-center justify-center text-[#FFF6E1]">
+    <div data-cursor-size="50px" data-cursor-color="#E08ABA"  className="h-[200rem] sm:h-[100rem] w-full sm:px-[5rem] sm:py-[5rem] p-10 flex flex-col sm:flex-col sm:space-x-20 sm:space-y-0 space-y-6 items-center justify-center text-[#FFF6E1]">
 
     <div className=" max-w-screen-lg w-full border-4 border-[#FFF6E1] p-10 rounded-3xl">
      <div className="flex justify-center sm:space-x-5 space-y-2 sm:space-y-0 space-x-0 sm:flex-row flex-col">
@@ -186,6 +206,90 @@ exploring the latest industry trends.
   );
 };
 
+const Workshops = () => {
+  return (
+    <section id="workshops">
+      <div
+        data-cursor-size="50px"
+        data-cursor-color="#E08ABA"
+        className="h-[115rem] sm:h-[60rem] w-full sm:px-[5rem] sm:py-[5rem] p-10 flex flex-col sm:space-y-10 space-y-6 items-center justify-center text-[#FFF6E1]"
+      >
+        {/* Workshop 1 */}
+        <div className="max-w-screen-lg w-full border-4 border-[#FFF6E1] p-10 rounded-3xl">
+          <div className="flex sm:flex-row flex-col items-center sm:space-x-5 space-y-6 sm:space-y-0">
+            {/* Image */}
+            <div className="group">
+              <Image
+                src="/workshops/dilip.png"
+                alt="Workshop 1"
+                className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
+                width={520}
+                height={100}
+                style={{ objectFit: "contain" }}
+              />
+            </div>
+            {/* Text Content */}
+            <div className="flex flex-col">
+              <div
+                className="text-[#FFF6E1] sm:text-6xl text-2xl font-bold"
+                style={{ fontFamily: "LongWeekend, sans-serif" }}
+              >
+                How to Design <br /> Characters for Games, <br /> Animation, and
+                Comics
+              </div>
+              <div className="text-xl font-bold mt-4">5th January, 2025</div>
+              <div className="text-2xl py-4">
+                Join <span className="font-bold">Dilip Chaubey</span>,
+                Founder of{" "}
+                <span className="font-bold">
+                  VINMICS &<br />
+                  Dilip Chaubey School of Digital Arts
+                </span>
+                , for an exclusive workshop on designing characters for games,
+                animation, and comics!
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Workshop 2 */}
+        <div className="max-w-screen-lg w-full border-4 border-[#FFF6E1] p-10 rounded-3xl">
+          <div className="flex sm:flex-row flex-col items-center sm:space-x-5 space-y-6 sm:space-y-0">
+            {/* Image */}
+            <div className="group">
+              <Image
+                src="/workshops/adobe-min.png"
+                alt="Workshop 2"
+                className="pb-5 transition-transform duration-300 transform group-hover:rotate-[5deg] origin-center"
+                width={520}
+                height={100}
+                style={{ objectFit: "contain" }}
+              />
+            </div>
+            {/* Text Content */}
+            <div className="flex flex-col">
+              <div
+                className="text-[#FFF6E1] sm:text-6xl text-2xl font-bold"
+                style={{ fontFamily: "LongWeekend, sans-serif" }}
+              >
+                Adobe Express: <br /> A Hands-On Experience
+              </div>
+              <div className="text-xl font-bold mt-4">4th January, 2025</div>
+              <div className="text-2xl py-4">
+                Adobe will conduct a workshop on{" "}
+                <span className="font-bold">Adobe Express</span>. Participants{" "}
+                <span className="font-bold">
+                  must bring their laptops, drawing tablets, iPads, etc. for the
+                  same.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
 
 
 const Tickets = () => {
@@ -299,7 +403,7 @@ const Sponsors = () => {
   return (
     <section id="sponsors" data-cursor-color="#E08ABA" >
       
-      <div className="h-[85rem] sm:h-[40rem] w-full flex flex-col  items-center justify-center">
+      <div className="h-[135rem] sm:h-[60rem] w-full flex flex-col  items-center justify-center ">
       <WordRotate
       className="pb-10 sm:text-7xl text-4xl text-[#FFF6E1] "
       
@@ -372,7 +476,9 @@ const Sponsors = () => {
       
         </div>
         <span className="">
-        The Department of Human-Centered Design at IIIT Delhi blends computing with design thinking, focusing on HCI, VR, Animation, and more to create next-gen design engineers.
+        The Department of Human-Centered Design at IIIT Delhi blends computing with design thinking, focusing on HCI, VR, Animation, and more to create the next generation of design engineers.        
+        
+        
         </span>
       </div>
       <div className="w-full h-full mt-4">
@@ -386,8 +492,65 @@ const Sponsors = () => {
       </div>
     </div>
   </PinContainer>
+  
     </div>
-        
+    <div className="flex sm:flex-row flex-col sm:space-y-0 space-y-20 pt-[4rem]">
+    <PinContainer
+    title="https://huion.com/"
+    href="https://huion.com/"
+  >
+    <div className="flex basis-full flex-col p-4 tracking-tight text-black sm:basis-1/2 w-[20rem] h-[20rem]">
+      <div className="max-w-xs !m-0 font-bold  text-2xl text-black">
+      Huion
+      </div>
+      <div className="text-base !m-0 !p-0">
+      <div className="">
+      
+        </div>
+        <span className="">
+        Huion is a leader in digital drawing tools, offering high-quality pen tablets and displays. Their products combine innovation and affordability to boost creativity in digital art and design.        
+        </span></div>
+      <div className="w-full h-full mt-4">
+        <Image
+          src="/spons/huion.png"
+          alt="Huion logo"
+          className="object-cover w-full h-full rounded-lg"
+          width={600}
+          height={100}
+        />
+      </div>
+    </div>
+  </PinContainer>
+  <PinContainer
+    title="https://iic.iiitd.ac.in/"
+    href="https://iic.iiitd.ac.in/"
+  >
+    <div className="flex basis-full flex-col p-4 tracking-tight text-black sm:basis-1/2 w-[20rem] h-[20rem]">
+      <div className="max-w-xs !m-0 font-bold  text-2xl text-black">
+      IIC
+      </div>
+      <div className="text-base !m-0 !p-0">
+      <div className="">
+      
+        </div>
+        <span className="">
+The Institute Innovation Council (IIC) at IIIT-D fosters innovation and entrepreneurship, empowering faculty and students to build successful startups and positioning IIIT-D as a hub for future entrepreneurs.
+
+        </span>
+      </div>
+      <div className="w-full h-full mt-4">
+        <Image
+          src="/spons/iic.png"
+          alt="IIC logo"
+          className="object-cover w-full h-full rounded-lg"
+          width={600}
+          height={100}
+        />
+      </div>
+    </div>
+  </PinContainer>
+    
+    </div>    
 
   
 </div>
