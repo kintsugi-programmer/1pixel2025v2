@@ -19,7 +19,7 @@ export const ContactUs = () => {
 
 export const Archive = () => {
   return (
-    <Link href="https://1pxdesignconf.iiitd.edu.in/2024">
+    <Link href="/2024">
       <StyledWrapper2>
         <button className="learn-more">
           Archive
